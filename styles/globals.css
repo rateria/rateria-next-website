@@ -65,9 +65,15 @@ a {
 	filter: brightness(70%);
 }
 
+@media (max-width: 768px) {
+	:root {
+		font-size: 55%;
+	}
+}
+
 @media (max-width: 425px) {
 	:root {
-		font-size: 45%;
+		font-size: 50%;
 	}
 }
 
