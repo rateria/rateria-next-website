@@ -6,15 +6,15 @@ function NewFooter() {
 		<div className={styles.wrapper}>
 			<div className={styles.socialIcons}>
 				<SocialIcon
-					url="https://api.whatsapp.com/send?phone=5511940046444&text=eai%20cuz%C3%A3o"
+					url="https://api.whatsapp.com/send?phone=5511940046444&text=Olá!%20Vim%20pelo%20site!"
 					label="WhatsApp"
 					className={styles.socialIcon}
 					target="_blank"
 				/>
 				<SocialIcon
-					url="mailto:rateria@gmail.com?cc=murillo.teixeira@usp.br"
-					label="Email"
-					bgColor="#e0d35e"
+					url="https://www.youtube.com/user/Rateria"
+					label="Youtube"
+					fgColor="#FFF5DA"
 					className={styles.socialIcon}
 					target="_blank"
 				/>

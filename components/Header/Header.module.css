@@ -79,6 +79,8 @@
 
 .rateria {
 	margin: 0;
+	margin-left: -2rem;
+
 	transition: 0.3s;
 	font-size: 4rem;
 	color: var(--color-secondary);
@@ -88,11 +90,12 @@
 
 .rateriaCollapsed {
 	margin: 0;
+	margin-left: -2rem;
+
 	transition: 0.3s;
 	font-size: 4rem;
 	color: var(--color-secondary);
 	margin-top: calc(15px);
-	/* transform: translateY(-50%); */
 }
 
 .logoAndText {

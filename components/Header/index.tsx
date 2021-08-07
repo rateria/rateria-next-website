@@ -52,6 +52,7 @@ function Header({ currentPage }: HeaderProps) {
 										width={160}
 										height={160}
 										className={isShrunk ? styles.collapsed : styles.image}
+										layout="fixed"
 									/>
 								</a>
 							</Link>
