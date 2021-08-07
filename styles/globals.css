@@ -30,6 +30,15 @@ h1, h2, h3, h4 {
   font-family: Staatliches;
 }
 
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+
 p, a {
   font-family: 'Carrois Gothic', sans-serif;
 }

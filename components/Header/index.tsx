@@ -13,11 +13,10 @@ function Header({currentPage}: HeaderProps) {
           <div className={styles.content}>
             <Image 
               src="/logo-fundo-azul.svg" 
-              alt="Vercel Logo" 
+              alt="Rateria" 
               width={200} 
               height={200} 
-              />
-
+            />
             <nav>
               <Link href="/">
                   <a className={

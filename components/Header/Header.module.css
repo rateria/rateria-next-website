@@ -7,6 +7,7 @@
   display:flex;
   justify-content: center;
   align-items: flex-start;
+  z-index: 999;
 }
 
 .placeholder {
@@ -20,6 +21,7 @@
   align-items: center;
   width: 100%;
   max-width:  1100px;
+
 }
 
 .content a {
@@ -37,4 +39,8 @@
 
 .foco {
   color: var(--color-white-transparent) !important
+}
+
+.image {
+  z-index: 3;
 }
