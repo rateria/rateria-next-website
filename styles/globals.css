@@ -1,16 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
+
+:root {
+  font-size: 62.5%;
+
+  --color-bg: #FFEBB7;
+  --color-bg-light: #FFF5DA;
+
+  --color-primary: #041E7A;
+  --color-primary-light: #8fbadb;
+  --color-primary-light-hover: #94b2c9;
+
+  --color-secondary: #FFC90B;
+
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-white-transparent: #ffffffaa;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--color-bg);
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  font-family: Staatliches;
+}
+
+p, a {
+  font-family: 'Carrois Gothic', sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  font-family: Staatliches;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.footerSocialIcons {
+  color: var(--color-bg);
+  width: 32px;
+}
+.footerSocialIcons:hover {
+  filter:brightness(70%);
 }

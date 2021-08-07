@@ -1,0 +1,40 @@
+.wrapper {
+  background-color: rgb(4, 30, 122);
+  height: 140px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.placeholder {
+  height: 140px;
+}
+
+.content {
+  margin:0 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width:  1100px;
+}
+
+.content a {
+  font-size: 2.5rem;
+  padding: 1rem;
+  margin: 0 1rem;
+  color: var(--color-secondary);
+  transition: 0.3s;
+
+}
+
+.content a:hover {
+  color: var(--color-white);
+}
+
+.foco {
+  color: var(--color-white-transparent) !important
+}
