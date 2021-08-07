@@ -2,6 +2,7 @@ import styles from './Header.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import Sidebar from '../Sidebar';
 
 interface HeaderProps {
 	currentPage: string;
@@ -9,6 +10,10 @@ interface HeaderProps {
 
 function Header({ currentPage }: HeaderProps) {
 	const [isShrunk, setShrunk] = useState(false);
+
+	const showSettings = (event: any) => {
+		event.preventDefault();
+	};
 
 	useEffect(() => {
 		const handler = () => {
@@ -40,7 +45,11 @@ function Header({ currentPage }: HeaderProps) {
 
 	return (
 		<>
-			<div className={styles.wrapper} style={{ height: isShrunk ? 80 : 120 }}>
+			<div
+				id="wrapper"
+				className={styles.wrapper}
+				style={{ height: isShrunk ? 80 : 120 }}
+			>
 				<div className={styles.content}>
 					<div className={styles.logoAndText}>
 						<div className={isShrunk ? styles.logoCollapsed : styles.logo}>
@@ -73,6 +82,23 @@ function Header({ currentPage }: HeaderProps) {
 							</a>
 						</Link>
 					</nav>
+				</div>
+
+				<div className={styles.mobileContent}>
+					<div className={styles.mobileLogoAndText}>
+						<Image
+							src="/logo-fundo-azul.svg"
+							alt="Rateria"
+							width={60}
+							height={60}
+							layout="fixed"
+						/>
+						<h3 className={styles.rateriaMobile}>RATERIA</h3>
+					</div>
+					{/* <h3 className={styles.rateriaMobile}>DROPDOWN</h3> */}
+					<Sidebar pageWrapId={'page-wrap'} outerContainerId={'App'} />
+
+					<div id="page-wrap"></div>
 				</div>
 			</div>
 			<div className={styles.placeholder} />
