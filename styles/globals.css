@@ -2,61 +2,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
 
 :root {
-  font-size: 62.5%;
+	font-size: 62.5%;
 
-  --color-bg: #FFEBB7;
-  --color-bg-light: #FFF5DA;
+	--color-bg: #ffebb7;
+	--color-bg-light: #fff5da;
 
-  --color-primary: #041E7A;
-  --color-primary-light: #8fbadb;
-  --color-primary-light-hover: #94b2c9;
+	--color-primary: #041e7a;
+	--color-primary-light: #8fbadb;
+	--color-primary-light-hover: #94b2c9;
 
-  --color-secondary: #FFC90B;
+	--color-secondary: #ffc90b;
 
-  --color-black: #000000;
-  --color-white: #ffffff;
-  --color-white-transparent: #ffffffaa;
+	--color-black: #000000;
+	--color-white: #ffffff;
+	--color-white-transparent: #ffffffaa;
 }
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  background-color: var(--color-bg);
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	background-color: var(--color-bg);
+	box-sizing: border-box;
 }
 
-h1, h2, h3, h4 {
-  font-family: Staatliches;
+h1,
+h2,
+h3,
+h4 {
+	font-family: Staatliches;
 }
 
 h1 {
-  font-size: 4.8rem;
+	font-size: 4.8rem;
 }
 
 h2 {
-  font-size: 4rem;
+	font-size: 4rem;
 }
 
-
-p, a {
-  font-family: 'Carrois Gothic', sans-serif;
+p,
+a {
+	font-family: 'Carrois Gothic', sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
-  font-family: Staatliches;
+	color: inherit;
+	text-decoration: none;
+	font-family: Staatliches;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .footerSocialIcons {
-  color: var(--color-bg);
-  width: 32px;
+	color: var(--color-bg);
+	width: 32px;
 }
+
 .footerSocialIcons:hover {
-  filter:brightness(70%);
+	filter: brightness(70%);
 }

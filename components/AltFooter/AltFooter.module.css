@@ -1,0 +1,27 @@
+.wrapper {
+	background-color: rgb(4, 30, 122);
+	width: 100%;
+	height: auto;
+	position: absolute;
+	padding-top: 2rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.credits {
+	display: flex;
+	margin-top: 2rem;
+	align-items: flex-end;
+}
+
+.credits p {
+	font-size: 1.2rem;
+	color: var(--color-bg-light);
+}
+
+.socialIcon {
+	margin: 0 0.5rem;
+}

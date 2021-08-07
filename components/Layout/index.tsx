@@ -1,5 +1,5 @@
 import Header from '../Header';
-import Footer from '../Footer';
+import AltFooter from '../AltFooter';
 
 interface LayoutProps {
 	currentPage: string;
@@ -11,7 +11,7 @@ export default function Layout({ currentPage, children }: LayoutProps) {
 		<>
 			<Header currentPage={currentPage} />
 			<main>{children}</main>
-			<Footer />
+			<AltFooter />
 		</>
 	);
 }
