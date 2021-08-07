@@ -16,8 +16,6 @@
 	--color-black: #000000;
 	--color-white: #ffffff;
 	--color-white-transparent: #ffffffaa;
-
-	--tablet-size: 768px;
 }
 
 html,
@@ -65,12 +63,6 @@ a {
 
 .footerSocialIcons:hover {
 	filter: brightness(70%);
-}
-
-@media (max-width: 768px) {
-	:root {
-		font-size: 50%;
-	}
 }
 
 @media (max-width: 425px) {

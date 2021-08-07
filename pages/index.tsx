@@ -47,10 +47,7 @@ export default function About() {
 						<div className={styles.image2}></div>
 						<div className={styles.text2}>
 							{/* <div className={styles.line}></div> */}
-							<h2>
-								<FaArrowRight size={32} />
-								&ensp;Nossa História
-							</h2>
+							<h2>Nossa História</h2>
 							<p>
 								Em 1997, alguns amigos que estudavam na Poli se reuniram com a
 								ideia de formar uma bateria semelhante às das escolas de samba,
