@@ -56,7 +56,6 @@ function Header({ currentPage }: HeaderProps) {
 								</a>
 							</Link>
 						</div>
-
 						<h3 className={isShrunk ? styles.rateriaCollapsed : styles.rateria}>
 							RATERIA
 						</h3>

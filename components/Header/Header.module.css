@@ -91,7 +91,8 @@
 	transition: 0.3s;
 	font-size: 4rem;
 	color: var(--color-secondary);
-	margin-top: calc(40px - 2rem);
+	margin-top: calc(15px);
+	/* transform: translateY(-50%); */
 }
 
 .logoAndText {
