@@ -89,7 +89,7 @@
 
 	z-index: 0;
 
-	background: url('../public/interbatuc1.png');
+	background: url('../../public/interbatuc1.png');
 	background-position: center;
 	background-size: cover;
 }

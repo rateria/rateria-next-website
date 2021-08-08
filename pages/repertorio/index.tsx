@@ -1,9 +1,9 @@
-import Layout from '../components/Layout';
+import Layout from '../../components/Layout';
 import Head from 'next/head';
-import styles from '../styles/Repertory.module.css';
+import styles from './Repertory.module.css';
 import { SocialIcon } from 'react-social-icons';
 
-export default function Contacts() {
+export default function Repertory() {
 	return (
 		<>
 			<Head>

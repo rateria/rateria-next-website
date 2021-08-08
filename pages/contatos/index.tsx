@@ -1,6 +1,6 @@
-import Layout from '../components/Layout';
+import Layout from '../../components/Layout';
 import Head from 'next/head';
-import styles from '../styles/Contacts.module.css';
+import styles from './Contacts.module.css';
 import { SocialIcon } from 'react-social-icons';
 
 export default function Contacts() {

@@ -1,9 +1,9 @@
-import Layout from '../components/Layout';
+import Layout from '../../components/Layout';
 import Head from 'next/head';
-import styles from '../styles/Apresentations.module.css';
+import styles from './Apresentations.module.css';
 import { SocialIcon } from 'react-social-icons';
 
-export default function Contacts() {
+export default function Apresentations() {
 	return (
 		<>
 			<Head>
@@ -20,7 +20,10 @@ export default function Contacts() {
 
 					<div className={styles.wrapper}>
 						<h1 className={styles.title}>Apresentações</h1>
-						<div className={styles.container}></div>
+						<div className={styles.container}>
+							<div className={styles.imageC}></div>
+							<div className={styles.text}></div>
+						</div>
 					</div>
 				</div>
 			</Layout>
