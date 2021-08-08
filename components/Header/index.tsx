@@ -51,10 +51,10 @@ function Header({ currentPage }: HeaderProps) {
 				style={{ height: isShrunk ? 80 : 120 }}
 			>
 				<div className={styles.content}>
-					<div className={styles.logoAndText}>
-						<div className={isShrunk ? styles.logoCollapsed : styles.logo}>
-							<Link href="/">
-								<a>
+					<Link href="/">
+						<a>
+							<div className={styles.logoAndText}>
+								<div className={isShrunk ? styles.logoCollapsed : styles.logo}>
 									<Image
 										src="/logo-fundo-azul.svg"
 										alt="Rateria"
@@ -63,13 +63,17 @@ function Header({ currentPage }: HeaderProps) {
 										className={isShrunk ? styles.collapsed : styles.image}
 										layout="fixed"
 									/>
-								</a>
-							</Link>
-						</div>
-						<h3 className={isShrunk ? styles.rateriaCollapsed : styles.rateria}>
-							RATERIA
-						</h3>
-					</div>
+								</div>
+								<h3
+									className={
+										isShrunk ? styles.rateriaCollapsed : styles.rateria
+									}
+								>
+									RATERIA
+								</h3>
+							</div>
+						</a>
+					</Link>
 					<nav style={{ height: isShrunk ? 80 : 120 }}>
 						<Link href="/">
 							<a className={currentPage === 'About' ? styles.foco : ''}>
@@ -85,19 +89,23 @@ function Header({ currentPage }: HeaderProps) {
 				</div>
 
 				<div className={styles.mobileContent}>
-					<div className={styles.mobileLogoAndText}>
-						<Image
-							src="/logo-fundo-azul.svg"
-							alt="Rateria"
-							width={60}
-							height={60}
-							layout="fixed"
-						/>
-						<h3 className={styles.rateriaMobile}>RATERIA</h3>
-					</div>
-					{/* <h3 className={styles.rateriaMobile}>DROPDOWN</h3> */}
-					<Sidebar pageWrapId={'page-wrap'} outerContainerId={'App'} />
+					<Link href="/">
+						<a>
+							<div className={styles.mobileLogoAndText}>
+								<Image
+									src="/logo-fundo-azul.svg"
+									alt="Rateria"
+									width={60}
+									height={60}
+									layout="fixed"
+								/>
+								<h3 className={styles.rateriaMobile}>RATERIA</h3>
+							</div>
 
+							{/* <h3 className={styles.rateriaMobile}>DROPDOWN</h3> */}
+							<Sidebar pageWrapId={'page-wrap'} outerContainerId={'App'} />
+						</a>
+					</Link>
 					<div id="page-wrap"></div>
 				</div>
 			</div>
