@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import Head from 'next/head';
-import styles from '../styles/About.module.css';
+import styles from '../styles/Contacts.module.css';
+import { SocialIcon } from 'react-social-icons';
 
 export default function Contacts() {
 	return (
@@ -12,8 +13,108 @@ export default function Contacts() {
 			</Head>
 
 			<Layout currentPage="Contacts">
-				<p>Oi</p>
+				<div className={styles.contentWrapper}>
+					<div className={styles.sectionTitle}>
+						<div className={styles.titleLine}></div>
+					</div>
+
+					<div className={styles.wrapper}>
+						<h1 className={styles.title}>Contatos</h1>
+						<div className={styles.container}>
+							<div className={styles.info}>
+								<div className={styles.contact}>
+									<div className={styles.infoText}>
+										<p className={styles.name}>Lucas Cipolla</p>
+										<p className={styles.occupation}>Presidente</p>
+									</div>
+									<div>
+										<SocialIcon
+											url="https://api.whatsapp.com/send?phone=5511958449446&text=Olá!%20Vim%20pelo%20site!"
+											label="WhatsApp"
+											className={styles.socialIcon}
+											fgColor="#FFF5DA"
+											target="_blank"
+											style={{ height: 40, width: 40, marginRight: 10 }}
+										/>
+										<SocialIcon
+											url="mailto:lucascipolla@gmail.com"
+											label="WhatsApp"
+											className={styles.socialIcon}
+											fgColor="#FFF5DA"
+											target="_blank"
+											style={{ height: 40, width: 40, marginRight: 10 }}
+										/>
+									</div>
+								</div>
+								<div className={styles.contact}>
+									<div className={styles.infoText}>
+										<p className={styles.name}>Julia Cristina</p>
+										<p className={styles.occupation}>Mestre</p>
+									</div>
+									<div>
+										<SocialIcon
+											url="https://api.whatsapp.com/send?phone=5511958449446&text=Olá!%20Vim%20pelo%20site!"
+											label="WhatsApp"
+											className={styles.socialIcon}
+											fgColor="#FFF5DA"
+											target="_blank"
+											style={{ height: 40, width: 40, marginRight: 10 }}
+										/>
+										<SocialIcon
+											url="mailto:lucascipolla@gmail.com"
+											label="WhatsApp"
+											className={styles.socialIcon}
+											fgColor="#FFF5DA"
+											target="_blank"
+											style={{ height: 40, width: 40, marginRight: 10 }}
+										/>
+									</div>
+								</div>
+								<div className={styles.contact}>
+									<div className={styles.infoText}>
+										<p className={styles.name}>Pedro Passarini</p>
+										<p className={styles.occupation}>Mestre</p>
+									</div>
+									<div>
+										<SocialIcon
+											url="https://api.whatsapp.com/send?phone=5511958449446&text=Olá!%20Vim%20pelo%20site!"
+											label="WhatsApp"
+											className={styles.socialIcon}
+											fgColor="#FFF5DA"
+											target="_blank"
+											style={{ height: 40, width: 40, marginRight: 10 }}
+										/>
+										<SocialIcon
+											url="mailto:lucascipolla@gmail.com"
+											label="WhatsApp"
+											className={styles.socialIcon}
+											fgColor="#FFF5DA"
+											target="_blank"
+											style={{ height: 40, width: 40, marginRight: 10 }}
+										/>
+									</div>
+								</div>
+							</div>
+							<div className={styles.imageC}></div>
+						</div>
+					</div>
+				</div>
 			</Layout>
 		</>
 	);
 }
+
+// <SocialIcon
+// 	url="https://api.whatsapp.com/send?phone=5511958449446&text=Olá!%20Vim%20pelo%20site!"
+// 	label="WhatsApp"
+// 	className={styles.socialIcon}
+// 	fgColor="#FFF5DA"
+// 	target="_blank"
+// />
+// <SocialIcon
+// 	url="https://www.youtube.com/user/Rateria"
+// 	label="Youtube"
+// 	fgColor="#FFF5DA"
+// 	className={styles.socialIcon}
+// 	target="_blank"
+// />

@@ -81,6 +81,18 @@ function Header({ currentPage }: HeaderProps) {
 							</a>
 						</Link>
 						<Link href="/contacts">
+							<a
+								className={currentPage === 'Apresentations' ? styles.foco : ''}
+							>
+								Apresentações
+							</a>
+						</Link>
+						<Link href="/contacts">
+							<a className={currentPage === 'Repertory' ? styles.foco : ''}>
+								Repertório
+							</a>
+						</Link>
+						<Link href="/contacts">
 							<a className={currentPage === 'Contacts' ? styles.foco : ''}>
 								Contatos
 							</a>

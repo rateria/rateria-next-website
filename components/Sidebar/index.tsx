@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { elastic as Menu } from 'react-burger-menu';
 import styles from './Sidebar.module.css';
-import { FaBook, FaPhoneAlt } from 'react-icons/fa';
+import { FaBook, FaPhoneAlt, FaMicrophone, FaMusic } from 'react-icons/fa';
 
 function Sidebar(props: any) {
 	return (
@@ -14,6 +14,21 @@ function Sidebar(props: any) {
 				</a>
 			</Link>
 			<br />
+			<Link href="/contacts">
+				<a className="menu-item">
+					<FaMicrophone size={28} />
+					&ensp;Apresentações
+				</a>
+			</Link>
+			<br />
+			<Link href="/contacts">
+				<a className="menu-item">
+					<FaMusic size={28} />
+					&ensp;Repertório
+				</a>
+			</Link>
+			<br />
+
 			<Link href="/contacts">
 				<a className="menu-item">
 					<FaPhoneAlt size={28} />

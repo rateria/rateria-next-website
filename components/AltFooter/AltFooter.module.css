@@ -1,7 +1,7 @@
 .wrapper {
 	background-color: rgb(4, 30, 122);
 	width: 100%;
-	height: auto;
+	height: 140px;
 	position: absolute;
 	padding-top: 2rem;
 
@@ -13,7 +13,7 @@
 
 .credits {
 	display: flex;
-	margin-top: 2rem;
+	margin: 2rem 0 1rem;
 	align-items: flex-end;
 }
 

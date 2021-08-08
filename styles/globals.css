@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
+@import './scrollbar.css';
+@import './sandwichMenu.css';
 
 :root {
 	font-size: 62.5%;
@@ -75,117 +77,4 @@ a {
 	:root {
 		font-size: 52%;
 	}
-}
-
-/* Dropdown da versão mobile */
-
-#page-wrap {
-	text-align: center;
-	overflow: auto;
-	/* top: 45%; */
-	position: relative;
-}
-
-.bm-item {
-	display: flex;
-	flex-direction: column;
-
-	/* Our sidebar item styling */
-	text-decoration: none;
-	margin-bottom: 10px;
-	color: #d1d1d1;
-	transition: color 0.2s;
-}
-
-.bm-item:hover {
-	color: white;
-}
-
-.bm-burger-button {
-	position: fixed;
-	width: 36px;
-	height: 30px;
-	top: 25px;
-	right: 16px;
-}
-
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-	background: var(--color-secondary);
-}
-
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
-	height: 3rem !important;
-	width: 3rem !important;
-	right: 16px !important;
-}
-
-/* Color/shape of close button cross */
-.bm-cross {
-	background: var(--color-primary);
-	height: 24px !important;
-}
-
-/* General sidebar styles */
-.bm-menu {
-	background: var(--color-bg);
-	padding: 2.5em 1.5em 0;
-	font-size: 1.15em;
-}
-
-.bm-menu-wrap {
-	top: 0;
-}
-
-.bm-overlay {
-	top: 0;
-	right: 0;
-}
-
-/* Morph shape necessary with bubble or elastic */
-.bm-morph-shape {
-	fill: var(--color-bg);
-}
-
-/* Wrapper for item list */
-.bm-item-list {
-	color: var(--color-primary);
-	font-size: 4.8rem;
-	line-height: 150%;
-}
-
-/* Styling of overlay */
-.bm-overlay {
-	background: rgba(0, 0, 0, 0.3);
-}
-
-::-webkit-scrollbar {
-	width: 10px;
-	height: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-	background: #8fbadb;
-	border: 16px none #ffffff;
-}
-::-webkit-scrollbar-thumb:hover {
-	background: #8fbadb;
-}
-::-webkit-scrollbar-thumb:active {
-	background: #8fbadb;
-}
-::-webkit-scrollbar-track {
-	background: #fff5da;
-	border: 0px none #ffffff;
-	border-radius: 54px;
-}
-::-webkit-scrollbar-track:hover {
-	background: #fff5da;
-}
-::-webkit-scrollbar-track:active {
-	background: #fff5da;
-}
-::-webkit-scrollbar-corner {
-	background: transparent;
 }

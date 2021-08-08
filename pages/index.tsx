@@ -13,8 +13,6 @@ export default function About() {
 			</Head>
 
 			<Layout currentPage="About">
-				<div className={styles.teste}></div>
-
 				<div className={styles.sectionTitle}>
 					<div className={styles.titleLine}></div>
 				</div>
