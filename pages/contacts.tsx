@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 import Head from 'next/head';
 import styles from '../styles/About.module.css';
 
-export default function C() {
+export default function Contacts() {
 	return (
 		<>
 			<Head>
@@ -11,9 +11,7 @@ export default function C() {
 				<link rel="icon" href="/logo-fundo-azul.svg" />
 			</Head>
 
-			<Layout currentPage="Contacts">
-                
-            </Layout>
+			<Layout currentPage="Contacts"></Layout>
 		</>
 	);
 }
