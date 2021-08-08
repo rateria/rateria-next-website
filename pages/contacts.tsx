@@ -11,7 +11,9 @@ export default function Contacts() {
 				<link rel="icon" href="/logo-fundo-azul.svg" />
 			</Head>
 
-			<Layout currentPage="Contacts"></Layout>
+			<Layout currentPage="Contacts">
+				<p>Oi</p>
+			</Layout>
 		</>
 	);
 }
