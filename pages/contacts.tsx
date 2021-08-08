@@ -103,18 +103,3 @@ export default function Contacts() {
 		</>
 	);
 }
-
-// <SocialIcon
-// 	url="https://api.whatsapp.com/send?phone=5511958449446&text=Olá!%20Vim%20pelo%20site!"
-// 	label="WhatsApp"
-// 	className={styles.socialIcon}
-// 	fgColor="#FFF5DA"
-// 	target="_blank"
-// />
-// <SocialIcon
-// 	url="https://www.youtube.com/user/Rateria"
-// 	label="Youtube"
-// 	fgColor="#FFF5DA"
-// 	className={styles.socialIcon}
-// 	target="_blank"
-// />

@@ -14,14 +14,14 @@ function Sidebar(props: any) {
 				</a>
 			</Link>
 			<br />
-			<Link href="/contacts">
+			<Link href="/apresentations">
 				<a className="menu-item">
 					<FaMicrophone size={28} />
 					&ensp;Apresentações
 				</a>
 			</Link>
 			<br />
-			<Link href="/contacts">
+			<Link href="/repertory">
 				<a className="menu-item">
 					<FaMusic size={28} />
 					&ensp;Repertório
