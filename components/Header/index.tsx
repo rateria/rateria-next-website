@@ -89,23 +89,20 @@ function Header({ currentPage }: HeaderProps) {
 				</div>
 
 				<div className={styles.mobileContent}>
-					<Link href="/">
-						<a>
-							<div className={styles.mobileLogoAndText}>
-								<Image
-									src="/logo-fundo-azul.svg"
-									alt="Rateria"
-									width={60}
-									height={60}
-									layout="fixed"
-								/>
-								<h3 className={styles.rateriaMobile}>RATERIA</h3>
-							</div>
+					<div className={styles.mobileLogoAndText}>
+						<Image
+							src="/logo-fundo-azul.svg"
+							alt="Rateria"
+							width={60}
+							height={60}
+							layout="fixed"
+						/>
+						<h3 className={styles.rateriaMobile}>RATERIA</h3>
+					</div>
 
-							{/* <h3 className={styles.rateriaMobile}>DROPDOWN</h3> */}
-							<Sidebar pageWrapId={'page-wrap'} outerContainerId={'App'} />
-						</a>
-					</Link>
+					{/* <h3 className={styles.rateriaMobile}>DROPDOWN</h3> */}
+					<Sidebar pageWrapId={'page-wrap'} outerContainerId={'App'} />
+
 					<div id="page-wrap"></div>
 				</div>
 			</div>
