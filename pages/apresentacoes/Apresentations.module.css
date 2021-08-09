@@ -110,19 +110,11 @@
 	/* min-height: 139px; */
 }
 
-.centerDiv {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-}
-
 .videoWrapper {
-	padding: 0 10rem;
-	width: 100%;
+	padding: 0 10vw 4rem;
+
 	display: flex;
 	justify-content: center;
-	max-width: 800px;
-	max-height: 450px;
 }
 
 .videoContainer {
@@ -130,8 +122,12 @@
 	height: 0;
 	padding-bottom: 56.25%;
 	position: relative;
+
 	min-width: 256px;
 	min-height: 139px;
+
+	max-width: 800px;
+	max-height: 450px;
 }
 
 .video {

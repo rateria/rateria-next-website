@@ -64,31 +64,29 @@ export default function Apresentations(this: any) {
 								</div>
 							</div>
 						</div>
-						<p className={styles.inviteToWatch}>
-							&emsp;Conheça nosso samba no vídeo abaixo e entre no nosso Youtube
-							para ver mais:
-							<SocialIcon
-								url="https://www.youtube.com/user/Rateria"
-								label="Youtube"
-								fgColor="#FFF5DA"
-								className={styles.socialIcon}
-								target="_blank"
-								style={{
-									height: 32,
-									width: 32,
-									marginLeft: '0.7rem',
-								}}
+					</div>
+					<p className={styles.inviteToWatch}>
+						&emsp;Conheça nosso samba no vídeo abaixo e entre no nosso Youtube
+						para ver mais:
+						<SocialIcon
+							url="https://www.youtube.com/user/Rateria"
+							label="Youtube"
+							fgColor="#FFF5DA"
+							className={styles.socialIcon}
+							target="_blank"
+							style={{
+								height: 32,
+								width: 32,
+								marginLeft: '0.7rem',
+							}}
+						/>
+					</p>
+					<div className={styles.videoWrapper}>
+						<div className={styles.videoContainer}>
+							<Iframe
+								url="https://www.youtube.com/embed/KoWoewVNdQU"
+								className={styles.video}
 							/>
-						</p>
-						<div className={styles.centerDiv}>
-							<div className={styles.videoWrapper}>
-								<div className={styles.videoContainer}>
-									<Iframe
-										url="https://www.youtube.com/embed/KoWoewVNdQU"
-										className={styles.video}
-									/>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
