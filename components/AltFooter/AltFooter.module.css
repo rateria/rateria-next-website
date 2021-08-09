@@ -13,7 +13,7 @@
 
 .credits {
 	display: flex;
-	margin: 2rem 0 1rem;
+	margin: 0 0 1rem;
 	align-items: flex-end;
 }
 
@@ -24,6 +24,8 @@
 
 .socialIcon {
 	margin: 0 0.5rem;
-	width: 2.4rem;
-	height: 2.4rem;
+}
+
+.socialIcon:hover {
+	transform: scale(1.1);
 }

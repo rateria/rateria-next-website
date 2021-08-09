@@ -75,8 +75,8 @@ export default function Apresentations(this: any) {
 							className={styles.socialIcon}
 							target="_blank"
 							style={{
-								height: 32,
-								width: 32,
+								height: 36,
+								width: 36,
 								marginLeft: '0.7rem',
 							}}
 						/>
