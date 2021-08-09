@@ -34,7 +34,7 @@
 	font-size: 2.5rem;
 	color: var(--color-secondary);
 	padding: 1rem;
-	margin: 0 1rem;
+	margin: 0 0.7rem;
 	transition: 0.3s;
 }
 
@@ -81,7 +81,7 @@
 
 .rateria {
 	margin: 0;
-	margin-left: -2rem;
+	margin-left: -3rem;
 
 	transition: 0.3s;
 	font-size: 4rem;
@@ -92,7 +92,7 @@
 
 .rateriaCollapsed {
 	margin: 0;
-	margin-left: -2rem;
+	margin-left: -3rem;
 
 	transition: 0.3s;
 	font-size: 4rem;
