@@ -90,3 +90,8 @@ button {
 		font-size: 52%;
 	}
 }
+
+.social-container {
+	position: relative !important;
+	padding: 0 10vw 4rem !important;
+}
