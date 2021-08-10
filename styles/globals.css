@@ -91,7 +91,7 @@ button {
 	}
 }
 
-.social-container {
+section .social-container {
 	position: relative !important;
 	padding: 0 10vw 4rem !important;
 }

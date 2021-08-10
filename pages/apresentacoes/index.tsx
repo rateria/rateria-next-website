@@ -81,14 +81,16 @@ export default function Apresentations(this: any) {
 							}}
 						/>
 					</p>
-					<div className={styles.videoWrapper}>
-						<div className={styles.videoContainer}>
-							<Iframe
-								url="https://www.youtube.com/embed/KoWoewVNdQU"
-								className={styles.video}
-							/>
+					<section>
+						<div className={styles.videoWrapper}>
+							<div className={styles.videoContainer}>
+								<Iframe
+									url="https://www.youtube.com/embed/KoWoewVNdQU"
+									className={styles.video}
+								/>
+							</div>
 						</div>
-					</div>
+					</section>
 				</div>
 			</Layout>
 		</>
