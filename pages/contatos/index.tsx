@@ -48,7 +48,7 @@ export default function Contacts() {
 								</div>
 								<div className={styles.contact}>
 									<div className={styles.infoText}>
-										<p className={styles.name}>Julia Cristina</p>
+										<p className={styles.name}>Julia Takano</p>
 										<p className={styles.occupation}>Mestre</p>
 									</div>
 									<div>
