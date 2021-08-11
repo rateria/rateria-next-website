@@ -5,19 +5,6 @@ import { SocialIcon } from 'react-social-icons';
 import Iframe from 'react-iframe';
 
 export default function Apresentations(this: any) {
-	const videoOnReady = (event: { target: { pauseVideo: () => void } }) => {
-		event.target.pauseVideo();
-	};
-
-	const opts = {
-		height: '390',
-		width: '640',
-		playerVars: {
-			// https://developers.google.com/youtube/player_parameters
-			autoplay: 1,
-		},
-	};
-
 	return (
 		<>
 			<Head>
@@ -52,7 +39,7 @@ export default function Apresentations(this: any) {
 								</p>
 
 								<div className={styles.buttonsArea}>
-									<a>Inters</a>
+									<a href="#inter">Inters</a>
 									<a>Eventos Beneficentes</a>
 									<a>Casamentos</a>
 									<a>Competições</a>
@@ -85,6 +72,7 @@ export default function Apresentations(this: any) {
 						<div className={styles.videoWrapper}>
 							<div className={styles.videoContainer}>
 								<Iframe
+									id="inter"
 									url="https://www.youtube.com/embed/KoWoewVNdQU"
 									className={styles.video}
 								/>

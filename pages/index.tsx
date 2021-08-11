@@ -1,7 +1,6 @@
 import Layout from '../components/Layout';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { FaArrowRight } from 'react-icons/fa';
 
 export default function About() {
 	return (
@@ -44,7 +43,6 @@ export default function About() {
 						</div>
 						<div className={styles.image2}></div>
 						<div className={styles.text2}>
-							{/* <div className={styles.line}></div> */}
 							<h2>Nossa História</h2>
 							<p>
 								Em 1997, alguns amigos que estudavam na Poli se reuniram com a
