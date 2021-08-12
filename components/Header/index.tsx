@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from './Header.module.css';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Sidebar from '../Sidebar';
@@ -55,13 +55,18 @@ function Header({ currentPage }: HeaderProps) {
 						<a>
 							<div className={styles.logoAndText}>
 								<div className={isShrunk ? styles.logoCollapsed : styles.logo}>
-									<Image
+									{/* <Image
 										src="/logo-fundo-azul.svg"
 										alt="Rateria"
 										width={160}
 										height={160}
 										className={isShrunk ? styles.collapsed : styles.image}
 										layout="fixed"
+									/> */}
+									<img
+										src="/logo-fundo-azul.svg"
+										alt="Rateria"
+										className={isShrunk ? styles.collapsed : styles.image}
 									/>
 								</div>
 								<h3
@@ -102,17 +107,21 @@ function Header({ currentPage }: HeaderProps) {
 
 				<div className={styles.mobileContent}>
 					<div className={styles.mobileLogoAndText}>
-						<Image
+						{/* <Image
 							src="/logo-fundo-azul.svg"
 							alt="Rateria"
 							width={60}
 							height={60}
 							layout="fixed"
+						/> */}
+						<img
+							src="/logo-fundo-azul.svg"
+							alt="Rateria"
+							style={{ width: 60, height: 60 }}
 						/>
 						<h3 className={styles.rateriaMobile}>RATERIA</h3>
 					</div>
 
-					{/* <h3 className={styles.rateriaMobile}>DROPDOWN</h3> */}
 					<Sidebar pageWrapId={'page-wrap'} outerContainerId={'App'} />
 
 					<div id="page-wrap"></div>

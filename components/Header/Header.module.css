@@ -24,6 +24,7 @@
 	max-width: 1100px;
 	transition: 0.3s;
 }
+
 .content nav {
 	transition: 0.3s;
 	display: flex;
@@ -47,6 +48,9 @@
 }
 
 .image {
+	width: 160px;
+	height: 160px;
+
 	z-index: 3;
 	transition: transform 0.3s ease-out;
 	transform: scale(1, 1);
@@ -54,6 +58,9 @@
 }
 
 .collapsed {
+	width: 160px;
+	height: 160px;
+
 	transition: transform 0.3s ease-out;
 	transform: scale(0.5, 0.5);
 	transform-origin: top;
