@@ -1,0 +1,17 @@
+.thumbs-wrapper {
+	display: none;
+}
+
+.control-dots {
+	bottom: -19px !important;
+	z-index: 999 !important;
+}
+
+.carousel-root {
+	width: 100%;
+}
+
+.carousel .slide {
+	display: flex;
+	align-items: center;
+}

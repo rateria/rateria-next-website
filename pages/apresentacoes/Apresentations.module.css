@@ -56,6 +56,14 @@
 	background-size: cover;
 }
 
+.image2 {
+	width: 400px;
+	height: 400px;
+	background: url('../../public/interbatuc2.png');
+	background-position: center;
+	background-size: cover;
+}
+
 .text {
 	width: 50%;
 }
@@ -111,8 +119,13 @@
 	/* min-height: 139px; */
 }
 
+.videoCarousel {
+	height: 100px;
+}
+
 .videoWrapper {
-	padding: 0 10vw 4rem;
+	padding: 0 10vw;
+	margin-bottom: 4rem;
 
 	display: flex;
 	justify-content: center;
@@ -151,9 +164,18 @@
 	border: none;
 	border-radius: 8px;
 }
+.socialIcon {
+	transition: 0.1s;
+}
 
 .socialIcon:hover {
 	transform: scale(1.1);
+}
+
+@media (min-width: 1024px) {
+	.videoContainer {
+		padding-bottom: 463.5px;
+	}
 }
 
 @media (max-width: 768px) {

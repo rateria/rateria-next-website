@@ -85,6 +85,7 @@ function Header({ currentPage }: HeaderProps) {
 								Sobre
 							</a>
 						</Link>
+
 						<Link href="/apresentacoes">
 							<a
 								className={currentPage === 'Apresentations' ? styles.foco : ''}

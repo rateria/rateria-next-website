@@ -4,7 +4,46 @@ import styles from './Apresentations.module.css';
 import { SocialIcon } from 'react-social-icons';
 import Iframe from 'react-iframe';
 
+import CustomCarousel from '../../components/CustomCarousel';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import ReactPlayer from 'react-player';
+
+const YoutubeSlide = ({
+	url,
+	isSelected,
+}: {
+	url: string;
+	isSelected?: boolean;
+}) => (
+	<div className={styles.videoContainer}>
+		<ReactPlayer
+			width="100%"
+			url={url}
+			playing={isSelected}
+			height="100%"
+			style={{ position: 'absolute' }}
+		/>
+	</div>
+);
+
 export default function Apresentations(this: any) {
+	const customRenderItem = (item: any, props: any) => (
+		<item.type {...item.props} {...props} />
+	);
+
+	const getVideoThumb = (videoId: string) =>
+		`https://img.youtube.com/vi/${videoId}/default.jpg`;
+
+	const getVideoId = (url: string) =>
+		url.substr('https://www.youtube.com/embed/'.length, url.length);
+
+	const customRenderThumb = (children: any[]) =>
+		children.map((item: any) => {
+			const videoId = getVideoId(item.props.url);
+			return <img src={getVideoThumb(videoId)} />;
+		});
+
 	return (
 		<>
 			<Head>
@@ -68,15 +107,28 @@ export default function Apresentations(this: any) {
 							}}
 						/>
 					</p>
+					{/* <div className={styles.videoContainer}>
+						<Iframe
+							url="https://www.youtube.com/embed/KoWoewVNdQU"
+							className={styles.video}
+						/>
+					</div> */}
 					<section>
 						<div className={styles.videoWrapper}>
-							<div className={styles.videoContainer}>
-								<Iframe
-									id="inter"
+							<CustomCarousel>
+								<YoutubeSlide
+									key="youtube-1"
 									url="https://www.youtube.com/embed/KoWoewVNdQU"
-									className={styles.video}
 								/>
-							</div>
+								<YoutubeSlide
+									key="youtube-2"
+									url="https://www.youtube.com/embed/DSheOc2FYBQ"
+								/>
+								<YoutubeSlide
+									key="youtube-3"
+									url="https://www.youtube.com/embed/-nUr0XaLVAM"
+								/>
+							</CustomCarousel>
 						</div>
 					</section>
 				</div>

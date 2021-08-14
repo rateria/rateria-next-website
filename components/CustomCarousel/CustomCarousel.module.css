@@ -1,0 +1,36 @@
+.rightArrow,
+.leftArrow {
+	position: absolute;
+	z-index: 2;
+	top: calc(50% - 15px);
+
+	cursor: pointer;
+
+	border: none;
+	border-radius: 50%;
+
+	background: none;
+}
+
+.rightArrow:hover,
+.leftArrow:hover {
+	opacity: 0.7;
+}
+
+.rightArrow {
+	right: -10px;
+}
+
+.leftArrow {
+	left: -10px;
+}
+
+@media (min-width: 1100px) {
+	.rightArrow {
+		right: calc(40vw - 460px);
+	}
+
+	.leftArrow {
+		left: calc(40vw - 460px);
+	}
+}

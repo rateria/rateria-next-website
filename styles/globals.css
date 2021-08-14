@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
 @import './scrollbar.css';
 @import './sandwichMenu.css';
+@import './videoCarousel.css';
 
 :root {
 	font-size: 62.5%;
