@@ -28,22 +28,6 @@ const YoutubeSlide = ({
 );
 
 export default function Apresentations(this: any) {
-	const customRenderItem = (item: any, props: any) => (
-		<item.type {...item.props} {...props} />
-	);
-
-	const getVideoThumb = (videoId: string) =>
-		`https://img.youtube.com/vi/${videoId}/default.jpg`;
-
-	const getVideoId = (url: string) =>
-		url.substr('https://www.youtube.com/embed/'.length, url.length);
-
-	const customRenderThumb = (children: any[]) =>
-		children.map((item: any) => {
-			const videoId = getVideoId(item.props.url);
-			return <img src={getVideoThumb(videoId)} />;
-		});
-
 	return (
 		<>
 			<Head>
@@ -107,12 +91,6 @@ export default function Apresentations(this: any) {
 							}}
 						/>
 					</p>
-					{/* <div className={styles.videoContainer}>
-						<Iframe
-							url="https://www.youtube.com/embed/KoWoewVNdQU"
-							className={styles.video}
-						/>
-					</div> */}
 					<section>
 						<div className={styles.videoWrapper}>
 							<CustomCarousel>

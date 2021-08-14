@@ -3,8 +3,7 @@
 }
 
 .control-dots {
-	bottom: -19px !important;
-	z-index: 999 !important;
+	display: none;
 }
 
 .carousel-root {

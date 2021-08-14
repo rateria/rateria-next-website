@@ -12,8 +12,13 @@ export default function CustomCarousel(props: any) {
 		margin: '0 8px',
 	};
 
+	const customRenderItem = (item: any, props: any) => (
+		<item.type {...item.props} {...props} />
+	);
+
 	return (
 		<Carousel
+			renderItem={customRenderItem}
 			statusFormatter={(current, total) => ``}
 			renderArrowPrev={(onClickHandler, hasPrev, label) =>
 				hasPrev && (
