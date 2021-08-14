@@ -8,6 +8,7 @@ import CustomCarousel from '../../components/CustomCarousel';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import ReactPlayer from 'react-player';
+import { useState } from 'react';
 
 const YoutubeSlide = ({
 	url,
@@ -28,6 +29,8 @@ const YoutubeSlide = ({
 );
 
 export default function Apresentations(this: any) {
+	const [currentSlide, setCurrentSlide] = useState(1);
+
 	return (
 		<>
 			<Head>
@@ -62,14 +65,44 @@ export default function Apresentations(this: any) {
 								</p>
 
 								<div className={styles.buttonsArea}>
-									<a href="#inter">Inters</a>
-									<a>Eventos Beneficentes</a>
-									<a>Casamentos</a>
-									<a>Competições</a>
-									<a>Festas de empresa</a>
-									<a>Festas de escola</a>
+									<a href="#carousel">
+										<button style={{}} onClick={() => setCurrentSlide(0)}>
+											Inters
+										</button>
+									</a>
+									<a href="#carousel">
+										<button style={{}} onClick={() => setCurrentSlide(1)}>
+											Eventos Beneficentes
+										</button>
+									</a>
+									<a href="#carousel">
+										<button style={{}} onClick={() => setCurrentSlide(2)}>
+											Casamentos
+										</button>
+									</a>
+									<a href="#carousel">
+										<button style={{}} onClick={() => setCurrentSlide(3)}>
+											Competições
+										</button>
+									</a>
+									<a href="#carousel">
+										<button style={{}} onClick={() => setCurrentSlide(4)}>
+											Festas de Empresa
+										</button>
+									</a>
+									<a href="#carousel">
+										<button style={{}} onClick={() => setCurrentSlide(5)}>
+											Festas de Escola
+										</button>
+									</a>
+
 									<div className={styles.line}></div>
-									<a>Outros</a>
+									<a href="#carousel">
+										<button style={{}} onClick={() => setCurrentSlide(6)}>
+											Outros
+										</button>
+									</a>
+
 									<div className={styles.line}></div>
 								</div>
 							</div>
@@ -92,8 +125,8 @@ export default function Apresentations(this: any) {
 						/>
 					</p>
 					<section>
-						<div className={styles.videoWrapper}>
-							<CustomCarousel>
+						<div id="carousel" className={styles.videoWrapper}>
+							<CustomCarousel currentSlide={currentSlide}>
 								<YoutubeSlide
 									key="youtube-1"
 									url="https://www.youtube.com/embed/KoWoewVNdQU"
@@ -104,6 +137,22 @@ export default function Apresentations(this: any) {
 								/>
 								<YoutubeSlide
 									key="youtube-3"
+									url="https://www.youtube.com/embed/-nUr0XaLVAM"
+								/>
+								<YoutubeSlide
+									key="youtube-4"
+									url="https://www.youtube.com/embed/-nUr0XaLVAM"
+								/>
+								<YoutubeSlide
+									key="youtube-5"
+									url="https://www.youtube.com/embed/-nUr0XaLVAM"
+								/>
+								<YoutubeSlide
+									key="youtube-6"
+									url="https://www.youtube.com/embed/-nUr0XaLVAM"
+								/>
+								<YoutubeSlide
+									key="youtube-7"
 									url="https://www.youtube.com/embed/-nUr0XaLVAM"
 								/>
 							</CustomCarousel>
