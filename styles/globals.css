@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
 @import './scrollbar.css';
 @import './sandwichMenu.css';
+@import './videoCarousel.css';
 
 :root {
 	font-size: 62.5%;
@@ -27,6 +28,13 @@ body {
 	background-color: var(--color-bg);
 
 	scroll-behavior: smooth;
+}
+
+:target {
+	display: block;
+	position: relative;
+	top: -130px;
+	visibility: hidden;
 }
 
 h1,

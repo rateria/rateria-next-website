@@ -54,6 +54,17 @@
 	background: url('../../public/interbatuc2.png');
 	background-position: center;
 	background-size: cover;
+
+	position: relative;
+	top: -1.5rem;
+}
+
+.image2 {
+	width: 400px;
+	height: 400px;
+	background: url('../../public/interbatuc2.png');
+	background-position: center;
+	background-size: cover;
 }
 
 .text {
@@ -91,6 +102,15 @@
 	align-items: center;
 }
 
+.buttonsArea button {
+	background: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+	height: 4.8rem;
+	width: 10.5rem;
+}
+
 .buttonsArea a:hover {
 	background-color: var(--color-primary-light-hover);
 }
@@ -103,7 +123,12 @@
 
 .inviteToWatch {
 	width: 100%;
-	text-align: center;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	padding-left: 10vw;
 	padding-right: 10vw;
 	text-indent: 0;
@@ -111,8 +136,13 @@
 	/* min-height: 139px; */
 }
 
+.videoCarousel {
+	height: 100px;
+}
+
 .videoWrapper {
-	padding: 0 10vw 4rem;
+	padding: 0 10vw;
+	margin-bottom: 1rem;
 
 	display: flex;
 	justify-content: center;
@@ -127,6 +157,12 @@
 		var(--color-bg-light) 70%,
 		var(--color-bg) 70%
 	);
+}
+
+.videoWrapper iframe {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border: none;
+	border-radius: 8px;
 }
 
 .videoContainer {
@@ -151,9 +187,23 @@
 	border: none;
 	border-radius: 8px;
 }
+.socialIcon {
+	transition: 0.1s;
+}
 
 .socialIcon:hover {
 	transform: scale(1.1);
+}
+
+.videoDescription p {
+	width: calc(80vw - 40px);
+	margin-bottom: 2rem;
+}
+
+@media (min-width: 1024px) {
+	.videoContainer {
+		padding-bottom: 463.5px;
+	}
 }
 
 @media (max-width: 768px) {

@@ -4,7 +4,41 @@ import styles from './Apresentations.module.css';
 import { SocialIcon } from 'react-social-icons';
 import Iframe from 'react-iframe';
 
+import CustomCarousel from '../../components/CustomCarousel';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import ReactPlayer from 'react-player';
+import { useState } from 'react';
+
+const YoutubeSlide = ({
+	url,
+	isSelected,
+}: {
+	url: string;
+	isSelected?: boolean;
+}) => (
+	<div className={styles.videoContainer}>
+		<ReactPlayer
+			width="100%"
+			url={url}
+			playing={isSelected}
+			height="100%"
+			style={{ position: 'absolute' }}
+		/>
+	</div>
+);
+
 export default function Apresentations(this: any) {
+	const [currentSlide, setCurrentSlide] = useState(3);
+
+	const updateCurrentSlide = (index: number) => {
+		console.log('mudou');
+
+		if (currentSlide !== index) {
+			setCurrentSlide(index);
+		}
+	};
+
 	return (
 		<>
 			<Head>
@@ -39,22 +73,51 @@ export default function Apresentations(this: any) {
 								</p>
 
 								<div className={styles.buttonsArea}>
-									<a href="#inter">Inters</a>
-									<a>Eventos Beneficentes</a>
-									<a>Casamentos</a>
-									<a>Competições</a>
-									<a>Festas de empresa</a>
-									<a>Festas de escola</a>
+									<a href="#carousel">
+										<button style={{}} onClick={() => setCurrentSlide(0)}>
+											Inters
+										</button>
+									</a>
+									<a href="#carousel">
+										<button style={{}} onClick={() => setCurrentSlide(1)}>
+											Eventos Beneficentes
+										</button>
+									</a>
+									<a href="#carousel">
+										<button style={{}} onClick={() => setCurrentSlide(2)}>
+											Casamentos
+										</button>
+									</a>
+									<a href="#carousel">
+										<button style={{}} onClick={() => setCurrentSlide(3)}>
+											Competições
+										</button>
+									</a>
+									<a href="#carousel">
+										<button style={{}} onClick={() => setCurrentSlide(4)}>
+											Festas de Empresa
+										</button>
+									</a>
+									<a href="#carousel">
+										<button style={{}} onClick={() => setCurrentSlide(5)}>
+											Festas de Escola
+										</button>
+									</a>
+
 									<div className={styles.line}></div>
-									<a>Outros</a>
+									<a href="#carousel">
+										<button style={{}} onClick={() => setCurrentSlide(6)}>
+											Outros
+										</button>
+									</a>
+
 									<div className={styles.line}></div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<p className={styles.inviteToWatch}>
-						&emsp;Conheça nosso samba no vídeo abaixo e entre no nosso Youtube
-						para ver mais:
+					<div className={styles.inviteToWatch}>
+						<p>&emsp;Conheça nosso samba:</p>
 						<SocialIcon
 							url="https://www.youtube.com/user/Rateria"
 							label="Youtube"
@@ -64,20 +127,125 @@ export default function Apresentations(this: any) {
 							style={{
 								height: 36,
 								width: 36,
-								marginLeft: '0.7rem',
+								marginLeft: '1rem',
 							}}
 						/>
-					</p>
+					</div>
+					<div id="carousel"></div>
 					<section>
 						<div className={styles.videoWrapper}>
-							<div className={styles.videoContainer}>
-								<Iframe
-									id="inter"
+							<CustomCarousel
+								curSlide={currentSlide}
+								curSlideChange={setCurrentSlide}
+								currentSlide={currentSlide}
+							>
+								<YoutubeSlide
+									key="youtube-1"
 									url="https://www.youtube.com/embed/KoWoewVNdQU"
-									className={styles.video}
 								/>
-							</div>
+								<YoutubeSlide
+									key="youtube-2"
+									url="https://www.youtube.com/embed/DSheOc2FYBQ"
+								/>
+								<YoutubeSlide
+									key="youtube-3"
+									url="https://www.youtube.com/embed/-nUr0XaLVAM"
+								/>
+								<YoutubeSlide
+									key="youtube-4"
+									url="https://www.youtube.com/embed/-nUr0XaLVAM"
+								/>
+								<YoutubeSlide
+									key="youtube-5"
+									url="https://www.youtube.com/embed/-nUr0XaLVAM"
+								/>
+								<YoutubeSlide
+									key="youtube-6"
+									url="https://www.youtube.com/embed/-nUr0XaLVAM"
+								/>
+								<YoutubeSlide
+									key="youtube-7"
+									url="https://www.youtube.com/embed/-nUr0XaLVAM"
+								/>
+							</CustomCarousel>
 						</div>
+						<Carousel
+							showThumbs={false}
+							showArrows={false}
+							className={styles.videoDescription}
+							selectedItem={currentSlide}
+						>
+							<p>
+								1111111111 Lorem ipsum dolor sit amet, consectetur adipiscing
+								elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+								aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+								ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+								aute irure dolor in reprehenderit in voluptate velit esse cillum
+								dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+								cupidatat non proident, sunt in culpa qui officia deserunt
+								mollit anim id est laborum.
+							</p>
+							<p>
+								22222222222222222 Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate
+								velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+								sint occaecat cupidatat non proident, sunt in culpa qui officia
+								deserunt mollit anim id est laborum.
+							</p>
+							<p>
+								333333333333 Lorem ipsum dolor sit amet, consectetur adipiscing
+								elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+								aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+								ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+								aute irure dolor in reprehenderit in voluptate velit esse cillum
+								dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+								cupidatat non proident, sunt in culpa qui officia deserunt
+								mollit anim id est laborum.
+							</p>
+							<p>
+								4444444444444444444 Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate
+								velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+								sint occaecat cupidatat non proident, sunt in culpa qui officia
+								deserunt mollit anim id est laborum.
+							</p>
+							<p>
+								55555555555555555555 Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate
+								velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+								sint occaecat cupidatat non proident, sunt in culpa qui officia
+								deserunt mollit anim id est laborum.
+							</p>
+							<p>
+								66666666666666666 Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate
+								velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+								sint occaecat cupidatat non proident, sunt in culpa qui officia
+								deserunt mollit anim id est laborum.
+							</p>
+							<p>
+								7777777777777777777777 Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate
+								velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+								sint occaecat cupidatat non proident, sunt in culpa qui officia
+								deserunt mollit anim id est laborum.
+							</p>
+						</Carousel>
 					</section>
 				</div>
 			</Layout>

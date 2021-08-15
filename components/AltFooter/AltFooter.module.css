@@ -24,6 +24,7 @@
 
 .socialIcon {
 	margin: 0 0.5rem;
+	transition: 0.1s;
 }
 
 .socialIcon:hover {
