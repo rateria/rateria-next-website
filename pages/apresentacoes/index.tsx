@@ -29,7 +29,15 @@ const YoutubeSlide = ({
 );
 
 export default function Apresentations(this: any) {
-	const [currentSlide, setCurrentSlide] = useState(1);
+	const [currentSlide, setCurrentSlide] = useState(3);
+
+	const updateCurrentSlide = (index: number) => {
+		console.log('mudou');
+
+		if (currentSlide !== index) {
+			setCurrentSlide(index);
+		}
+	};
 
 	return (
 		<>
@@ -126,7 +134,11 @@ export default function Apresentations(this: any) {
 					<div id="carousel"></div>
 					<section>
 						<div className={styles.videoWrapper}>
-							<CustomCarousel currentSlide={currentSlide}>
+							<CustomCarousel
+								curSlide={currentSlide}
+								curSlideChange={setCurrentSlide}
+								currentSlide={currentSlide}
+							>
 								<YoutubeSlide
 									key="youtube-1"
 									url="https://www.youtube.com/embed/KoWoewVNdQU"
@@ -157,6 +169,83 @@ export default function Apresentations(this: any) {
 								/>
 							</CustomCarousel>
 						</div>
+						<Carousel
+							showThumbs={false}
+							showArrows={false}
+							className={styles.videoDescription}
+							selectedItem={currentSlide}
+						>
+							<p>
+								1111111111 Lorem ipsum dolor sit amet, consectetur adipiscing
+								elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+								aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+								ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+								aute irure dolor in reprehenderit in voluptate velit esse cillum
+								dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+								cupidatat non proident, sunt in culpa qui officia deserunt
+								mollit anim id est laborum.
+							</p>
+							<p>
+								22222222222222222 Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate
+								velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+								sint occaecat cupidatat non proident, sunt in culpa qui officia
+								deserunt mollit anim id est laborum.
+							</p>
+							<p>
+								333333333333 Lorem ipsum dolor sit amet, consectetur adipiscing
+								elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+								aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+								ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+								aute irure dolor in reprehenderit in voluptate velit esse cillum
+								dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+								cupidatat non proident, sunt in culpa qui officia deserunt
+								mollit anim id est laborum.
+							</p>
+							<p>
+								4444444444444444444 Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate
+								velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+								sint occaecat cupidatat non proident, sunt in culpa qui officia
+								deserunt mollit anim id est laborum.
+							</p>
+							<p>
+								55555555555555555555 Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate
+								velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+								sint occaecat cupidatat non proident, sunt in culpa qui officia
+								deserunt mollit anim id est laborum.
+							</p>
+							<p>
+								66666666666666666 Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate
+								velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+								sint occaecat cupidatat non proident, sunt in culpa qui officia
+								deserunt mollit anim id est laborum.
+							</p>
+							<p>
+								7777777777777777777777 Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate
+								velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+								sint occaecat cupidatat non proident, sunt in culpa qui officia
+								deserunt mollit anim id est laborum.
+							</p>
+						</Carousel>
 					</section>
 				</div>
 			</Layout>

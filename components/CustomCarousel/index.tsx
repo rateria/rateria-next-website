@@ -8,8 +8,13 @@ export default function CustomCarousel(props: any) {
 		<item.type {...item.props} {...props} />
 	);
 
+	const handleSlideChange = (index: number) => {
+		props.curSlideChange(index);
+	};
+
 	return (
 		<Carousel
+			onChange={handleSlideChange}
 			showThumbs={false}
 			selectedItem={props.currentSlide}
 			renderItem={customRenderItem}

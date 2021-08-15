@@ -6,6 +6,10 @@
 	display: none;
 }
 
+.carousel-status {
+	display: none;
+}
+
 .carousel-root {
 	width: 100%;
 }

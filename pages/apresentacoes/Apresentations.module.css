@@ -139,7 +139,7 @@
 
 .videoWrapper {
 	padding: 0 10vw;
-	margin-bottom: 4rem;
+	margin-bottom: 1rem;
 
 	display: flex;
 	justify-content: center;
@@ -190,6 +190,11 @@
 
 .socialIcon:hover {
 	transform: scale(1.1);
+}
+
+.videoDescription p {
+	width: calc(80vw - 40px);
+	margin-bottom: 2rem;
 }
 
 @media (min-width: 1024px) {
