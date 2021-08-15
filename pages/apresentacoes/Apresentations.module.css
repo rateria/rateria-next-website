@@ -120,7 +120,12 @@
 
 .inviteToWatch {
 	width: 100%;
-	text-align: center;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	padding-left: 10vw;
 	padding-right: 10vw;
 	text-indent: 0;
@@ -149,6 +154,12 @@
 		var(--color-bg-light) 70%,
 		var(--color-bg) 70%
 	);
+}
+
+.videoWrapper iframe {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border: none;
+	border-radius: 8px;
 }
 
 .videoContainer {

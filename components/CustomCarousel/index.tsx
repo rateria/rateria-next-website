@@ -10,6 +10,7 @@ export default function CustomCarousel(props: any) {
 
 	return (
 		<Carousel
+			showThumbs={false}
 			selectedItem={props.currentSlide}
 			renderItem={customRenderItem}
 			statusFormatter={(current, total) => ``}

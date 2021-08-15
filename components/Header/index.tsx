@@ -36,7 +36,6 @@ function Header({ currentPage }: HeaderProps) {
 
 				return isShrunk;
 			});
-			console.log(isShrunk);
 		};
 
 		window.addEventListener('scroll', handler);
@@ -122,9 +121,9 @@ function Header({ currentPage }: HeaderProps) {
 						/>
 						<h3 className={styles.rateriaMobile}>RATERIA</h3>
 					</div>
-
-					<Sidebar pageWrapId={'page-wrap'} outerContainerId={'App'} />
-
+					<div id="App">
+						<Sidebar pageWrapId={'page-wrap'} outerContainerId={'App'} />
+					</div>
 					<div id="page-wrap"></div>
 				</div>
 			</div>

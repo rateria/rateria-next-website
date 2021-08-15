@@ -108,9 +108,8 @@ export default function Apresentations(this: any) {
 							</div>
 						</div>
 					</div>
-					<p className={styles.inviteToWatch}>
-						&emsp;Conheça nosso samba no vídeo abaixo e entre no nosso Youtube
-						para ver mais:
+					<div className={styles.inviteToWatch}>
+						<p>&emsp;Conheça nosso samba:</p>
 						<SocialIcon
 							url="https://www.youtube.com/user/Rateria"
 							label="Youtube"
@@ -120,12 +119,13 @@ export default function Apresentations(this: any) {
 							style={{
 								height: 36,
 								width: 36,
-								marginLeft: '0.7rem',
+								marginLeft: '1rem',
 							}}
 						/>
-					</p>
+					</div>
+					<div id="carousel"></div>
 					<section>
-						<div id="carousel" className={styles.videoWrapper}>
+						<div className={styles.videoWrapper}>
 							<CustomCarousel currentSlide={currentSlide}>
 								<YoutubeSlide
 									key="youtube-1"
