@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { MutableRefObject, useRef, useState } from 'react';
 import styles from './AudioPlayer.module.css';
 
 interface AudioPlayerProps {
@@ -14,13 +14,22 @@ export default function AudioPlayer({
 }: AudioPlayerProps) {
 	const [playing, setPlaying] = useState(false);
 
+	const playButton = useRef() as MutableRefObject<HTMLDivElement>;
+
+	const playPauseAudio = () => {
+		if (playButton !== null) {
+			playing ? playButton.current.pause() : playButton.current.play();
+			setPlaying(!playing);
+		}
+	};
+
 	return (
 		<div
-			className={styles.audioPlayer}
+			className={`${styles.audioPlayer} ${playing ? styles.playing : ''}`}
 			style={{ backgroundImage: `url(${imgSrc})` }}
 		>
 			<h1 className={styles.songName}>{name}</h1>
-			<audio src={audioSrc} preload="metadata" loop></audio>
+			<audio ref={playButton} src={audioSrc} preload="metadata" loop></audio>
 			<div className={styles.audioControls}>
 				<div className={styles.volume}>
 					<button className={styles.muteButton}></button>
@@ -31,7 +40,7 @@ export default function AudioPlayer({
 						value="100"
 					/>
 				</div>
-				<button className={styles.playIcon}></button>
+				<button className={styles.playIcon} onClick={playPauseAudio}></button>
 				<div className={styles.progression}>
 					<span className={styles.currentTime}>0:00</span>
 					<input
