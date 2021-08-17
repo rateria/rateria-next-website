@@ -24,21 +24,45 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+
 	margin-bottom: 6.4rem;
 	padding-bottom: 2.5rem;
 }
 
 .title {
-	margin: 0;
 	margin-top: -6.8rem;
 	margin-left: 10vw;
+	margin-right: 10vw;
+
+	width: 80vw;
+	max-width: 1100px;
 
 	z-index: 5;
 }
 
 .container {
 	display: flex;
-	justify-content: space-between;
+
+	justify-content: space-around;
+	align-items: center;
 	margin-left: 10vw;
 	margin-right: 10vw;
+	width: 80vw;
+	max-width: 1100px;
+
+	flex-direction: column;
 }
+
+.audios {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 720px;
+}
+
+/* @media (max-width: 1024px) {
+	.container p {
+		width: 30%;
+	}
+} */

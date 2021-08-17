@@ -2,6 +2,7 @@ import Layout from '../../components/Layout';
 import Head from 'next/head';
 import styles from './Repertory.module.css';
 import { SocialIcon } from 'react-social-icons';
+import AudioPlayer from '../../components/AudioPlayer';
 
 export default function Repertory() {
 	return (
@@ -20,7 +21,41 @@ export default function Repertory() {
 
 					<div className={styles.wrapper}>
 						<h1 className={styles.title}>Repertório</h1>
-						<div className={styles.container}></div>
+						<div className={styles.container}>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Pellentesque sollicitudin erat vel lobortis pretium.
+								Pellentesque eget dui dolor. Quisque vitae diam at nibh
+								sollicitudin vestibulum nec at felis. Nulla pharetra, diam
+								consectetur congue feugiat, purus tellus faucibus dolor, eget
+								vestibulum leo metus sit amet purus. Proin aliquam scelerisque
+								posuere. Suspendisse sit amet eros non odio congue pharetra.
+								Pellentesque id felis tortor. Sed vitae commodo purus. Quisque
+								sagittis neque et quam placerat vestibulum. Vestibulum nec purus
+								tristique, auctor orci non, aliquet odio. Morbi sed sollicitudin
+								mauris. Etiam tristique, lectus sed volutpat pretium, ipsum
+								augue venenatis nisi, suscipit dapibus mi orci vel nisl. Aenean
+								quis odio nec metus eleifend finibus nec vitae urna. Nunc
+								tincidunt velit neque, eu venenatis nisl pharetra ut.
+								Pellentesque habitant morbi tristique senectus et netus et
+								malesuada fames ac turpis egestas.
+							</p>
+							<div className={styles.audios}>
+								<AudioPlayer
+									name="Bangra"
+									audioSrc="./Bhangra.mp3"
+									imgSrc="./bhangra.jpg"
+								/>
+								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
+								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
+								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
+								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
+								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
+								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
+								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
+								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
+							</div>
+						</div>
 					</div>
 				</div>
 			</Layout>

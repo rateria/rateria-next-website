@@ -1,14 +1,26 @@
+import { useState } from 'react';
 import styles from './AudioPlayer.module.css';
 
 interface AudioPlayerProps {
 	name: string;
+	audioSrc: string;
+	imgSrc: string;
 }
 
-export default function AudioPlayer({ name }: AudioPlayerProps) {
+export default function AudioPlayer({
+	name,
+	audioSrc,
+	imgSrc,
+}: AudioPlayerProps) {
+	const [playing, setPlaying] = useState(false);
+
 	return (
-		<div className={styles.audioPlayer}>
+		<div
+			className={styles.audioPlayer}
+			style={{ backgroundImage: `url(${imgSrc})` }}
+		>
 			<h1 className={styles.songName}>{name}</h1>
-			<audio preload="metadata" loop></audio>
+			<audio src={audioSrc} preload="metadata" loop></audio>
 			<div className={styles.audioControls}>
 				<div className={styles.volume}>
 					<button className={styles.muteButton}></button>
