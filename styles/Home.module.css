@@ -1,0 +1,68 @@
+.rightArrow,
+.leftArrow {
+	position: absolute;
+	z-index: 2;
+	top: calc(50% - 15px);
+
+	cursor: pointer;
+
+	border: none;
+	border-radius: 50%;
+
+	background: none;
+	color: var(--color-secondary);
+}
+
+.rightArrow:hover,
+.leftArrow:hover {
+	opacity: 0.7;
+}
+
+.rightArrow {
+	right: 10px;
+}
+
+.leftArrow {
+	left: 10px;
+}
+
+.image1 {
+    background: url('../public/interbatuc1.png');
+	background-size: cover;
+    height: 64vh;
+    width: 100vw;
+}
+.image2 {
+    background: url('../public/interbatuc2.png');
+	background-size: cover;
+    height: 64vh;
+    width: 100vw;
+}
+.image3 {
+    background: url('../public/interbatuc3.jpg');
+	background-size: cover;
+    height: 64vh;
+    width: 100vw;
+}
+
+.legendCarousel {
+	color:var(--color-white);
+	z-index: 1;
+	position:absolute;
+	width:40vw;
+	margin: 10vw;
+}
+.legendCarousel > p {
+	text-align: left;
+}
+.legendButton {
+	text-decoration: none;
+	font-size: 1.6rem;
+	line-height: 150%;
+	font-family: 'Carrois Gothic', sans-serif;
+}
+
+.carouselItem {
+	display:flex;
+	align-items: center;
+}

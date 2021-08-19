@@ -2,6 +2,10 @@ import Layout from '../components/Layout';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { SocialIcon } from 'react-social-icons';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
+import Link from 'next/link'
 
 export default function Home(this: any) {
     return (
@@ -12,7 +16,66 @@ export default function Home(this: any) {
 				<link rel="icon" href="/logo-fundo-azul.svg" />
 			</Head>
             <Layout currentPage="Home">
-                
+                <div className={styles.carouselWrapper}>
+                    <Carousel
+                    renderArrowPrev={(onClickHandler, hasPrev, label) =>
+                    hasPrev && (
+                            <button
+                                type="button"
+                                onClick={onClickHandler}
+                                title={label}
+                                className={styles.leftArrow}
+                            >
+                                <FaAngleLeft size={40} />
+                            </button>
+                        )
+                    }
+                    renderArrowNext={(onClickHandler, hasNext, label) =>
+                        hasNext && (
+                            <button
+                                type="button"
+                                onClick={onClickHandler}
+                                title={label}
+                                className={styles.rightArrow}
+                            >
+                                <FaAngleRight size={40} />
+                            </button>
+                        )
+                    }>
+                        <div className = {styles.carouselItem}>
+                            <div className={styles.image1}></div>
+                            <div className={styles.legendCarousel}>
+                                <h1>Nossa História</h1>
+                                <p>A Rateria, bateria da Escola Politécnica da USP, desde 1997 se destaca no cenário de samba universitário da capital paulista. Nosso principal intuito é garantir a diversão e levar alegria a quem nos vê e ouve tocar!</p>
+                                <Link href = '/sobre' ><a className = {styles.legendButton}>Saiba Mais!</a></Link>
+                            </div>
+                        </div>
+                        <div className = {styles.carouselItem}>
+                            <div className={styles.image2}></div>
+                            <div className={styles.legendCarousel}>
+                                <h1>Onde Tocamos?</h1>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque luctus tincidunt tincidunt. Duis rhoncus nulla dapibus, scelerisque metus eget, fermentum sem. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor semper velit quis euismod.</p>
+                                <Link href = '/sobre' ><a className = {styles.legendButton}>Saiba Mais!</a></Link>
+                            </div>
+                        </div>
+                        <div className = {styles.carouselItem}>
+                            <div className={styles.image3}></div>
+                            <div className={styles.legendCarousel}>
+                                <h1>O que tocamos?</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor semper velit quis euismod. Vivamus placerat, nibh sit amet volutpat pulvinar, nunc arcu tempor sem, ut imperdiet urna ipsum ultricies mauris. Nulla pretium mattis lorem quis dapibus. Morbi tortor lacus, eleifend sed condimentum quis, commodo in nibh. Nulla imperdiet fringilla mollis.</p>
+                                <Link href = '/sobre' ><a className = {styles.legendButton}>Saiba Mais!</a></Link>
+                            </div>
+                        </div>
+                        <div className = {styles.carouselItem}>
+                            <div className={styles.image2}></div>
+                            <div className={styles.legendCarousel}>
+                                <h1>Fale Conosco!</h1>
+                                <p>Se quiser tirar alguma dúvida, conversar ou nos contratar!</p>
+                                <Link href = '/sobre' ><a className = {styles.legendButton}>Saiba Mais!</a></Link>
+                            </div>
+                        </div>
+                    </Carousel>
+                </div>
             </Layout>
         </>
     )
