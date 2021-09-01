@@ -27,42 +27,68 @@
 }
 
 .image1 {
-    background: url('../public/interbatuc1.png');
-	background-size: cover;
-    height: 64vh;
-    width: 100vw;
+	background: url('../public/carouselImg1.jpg');
 }
 .image2 {
-    background: url('../public/interbatuc2.png');
-	background-size: cover;
-    height: 64vh;
-    width: 100vw;
+	background: url('../public/carouselImg2.jpg');
 }
 .image3 {
-    background: url('../public/interbatuc3.jpg');
+	background: url('../public/carouselImg3.jpg');
+}
+.image4 {
+	background: url('../public/carouselImg4.png');
+}
+
+.image1,
+.image2,
+.image3,
+.image4 {
+	height: calc(100vh - 120px);
+	width: 100vw;
+	background-position: center;
 	background-size: cover;
-    height: 64vh;
-    width: 100vw;
 }
 
 .legendCarousel {
-	color:var(--color-white);
+	color: var(--color-white);
 	z-index: 1;
-	position:absolute;
-	width:40vw;
+	position: absolute;
+	width: 60vw;
 	margin: 10vw;
+	max-width: 500px;
 }
+
+.legendCarousel h1 {
+	font-size: 6.4rem;
+}
+
 .legendCarousel > p {
 	text-align: left;
 }
 .legendButton {
-	text-decoration: none;
-	font-size: 1.6rem;
+	text-decoration: underline;
+	font-size: 2.4rem;
 	line-height: 150%;
-	font-family: 'Carrois Gothic', sans-serif;
+	/* font-family: 'Carrois Gothic', sans-serif; */
+
+	color: var(--color-secondary);
+	transition: 0.3s;
+}
+.legendButton:hover {
+	color: var(--color-white);
 }
 
 .carouselItem {
-	display:flex;
+	display: flex;
 	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 768px) {
+	.image1,
+	.image2,
+	.image3 {
+		height: calc(100vh - 80px);
+		width: 100vw;
+	}
 }
