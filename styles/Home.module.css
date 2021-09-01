@@ -27,16 +27,16 @@
 }
 
 .image1 {
-	background: url('../public/carouselImg1.jpg');
+	background: url('/carouselImg1.jpg');
 }
 .image2 {
-	background: url('../public/carouselImg2.jpg');
+	background: url('/carouselImg2.jpg');
 }
 .image3 {
-	background: url('../public/carouselImg3.jpg');
+	background: url('/carouselImg3.jpg');
 }
 .image4 {
-	background: url('../public/carouselImg4.png');
+	background: url('/carouselImg4.png');
 }
 
 .image1,
