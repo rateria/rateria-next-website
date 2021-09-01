@@ -2,6 +2,7 @@ import Layout from '../../components/Layout';
 import Head from 'next/head';
 import styles from './Repertory.module.css';
 import { SocialIcon } from 'react-social-icons';
+import AudioPlayer from '../../components/AudioPlayer';
 
 export default function Repertory() {
 	return (
@@ -20,7 +21,67 @@ export default function Repertory() {
 
 					<div className={styles.wrapper}>
 						<h1 className={styles.title}>Repertório</h1>
-						<div className={styles.container}></div>
+						<div className={styles.container}>
+							<div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Pellentesque sollicitudin erat vel lobortis pretium.
+									Pellentesque eget dui dolor. Quisque vitae diam at nibh
+									sollicitudin vestibulum nec at felis. Nulla pharetra, diam
+									consectetur congue feugiat, purus tellus faucibus dolor, eget
+									vestibulum leo metus sit amet purus. Proin aliquam scelerisque
+									posuere. Suspendisse sit amet eros non odio congue pharetra.
+									Pellentesque id felis tortor.
+								</p>
+								{/* <div className={styles.audios}>
+								<AudioPlayer
+									name="Bangra"
+									audioSrc="./Bhangra.mp3"
+									imgSrc="./bhangra.jpg"
+									/>
+								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
+								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
+								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
+								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
+								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
+								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
+								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
+								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
+							</div> */}
+								<div className={styles.contact}>
+									<div className={styles.infoText}>
+										<p className={styles.name}>Pedro Passarini</p>
+										<p className={styles.occupation}>Mestre</p>
+									</div>
+									<div>
+										<SocialIcon
+											url="https://api.whatsapp.com/send?phone=5511958449446&text=Olá!%20Vim%20pelo%20site!"
+											label="WhatsApp"
+											className={styles.socialIcon}
+											fgColor="#FFF5DA"
+											target="_blank"
+											style={{ height: 40, width: 40, marginRight: 10 }}
+										/>
+										<SocialIcon
+											url="mailto:lucascipolla@gmail.com"
+											label="WhatsApp"
+											className={styles.socialIcon}
+											fgColor="#FFF5DA"
+											target="_blank"
+											style={{ height: 40, width: 40, marginRight: 10 }}
+										/>
+									</div>
+								</div>
+							</div>
+							<iframe
+								src="https://open.spotify.com/embed/playlist/1RlGciZaSsb1peK00fskil"
+								width="100%"
+								height="380"
+								frameBorder="0"
+								allowTransparency={true}
+								allow="encrypted-media"
+							></iframe>
+						</div>
 					</div>
 				</div>
 			</Layout>
