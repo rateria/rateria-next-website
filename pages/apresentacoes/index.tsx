@@ -23,6 +23,7 @@ const YoutubeSlide = ({
 			url={url}
 			playing={isSelected}
 			height="100%"
+			controls={true}
 			style={{ position: 'absolute' }}
 		/>
 	</div>
@@ -170,6 +171,7 @@ export default function Apresentations(this: any) {
 							</CustomCarousel>
 						</div>
 						<Carousel
+							swipeable={false}
 							showThumbs={false}
 							showArrows={false}
 							className={styles.videoDescription}

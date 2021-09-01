@@ -80,6 +80,11 @@ function Header({ currentPage }: HeaderProps) {
 					</Link>
 					<nav style={{ height: isShrunk ? 80 : 120 }}>
 						<Link href="/">
+							<a className={currentPage === 'Home' ? styles.foco : ''}>
+								Inicial
+							</a>
+						</Link>
+						<Link href="/sobre">
 							<a className={currentPage === 'About' ? styles.foco : ''}>
 								Sobre
 							</a>
