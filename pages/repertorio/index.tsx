@@ -24,30 +24,14 @@ export default function Repertory() {
 						<div className={styles.container}>
 							<div>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Pellentesque sollicitudin erat vel lobortis pretium.
-									Pellentesque eget dui dolor. Quisque vitae diam at nibh
-									sollicitudin vestibulum nec at felis. Nulla pharetra, diam
-									consectetur congue feugiat, purus tellus faucibus dolor, eget
-									vestibulum leo metus sit amet purus. Proin aliquam scelerisque
-									posuere. Suspendisse sit amet eros non odio congue pharetra.
-									Pellentesque id felis tortor.
+									&emsp;Esta seção é dedicada ao repertório musical da Rateria.
+									Aqui estamos exibindo produções e adaptações musicais
+									elaboradas para apresentações com palco e percussão. Os
+									estilos são variados: axé, samba, rock nacional, pagode, pop,
+									funk e o que mais você encontrar por aí. É só escolher uma das
+									faixas na lista a seguir e descobrir um pouco melhor do que
+									nós somos capazes!
 								</p>
-								{/* <div className={styles.audios}>
-								<AudioPlayer
-									name="Bangra"
-									audioSrc="./Bhangra.mp3"
-									imgSrc="./bhangra.jpg"
-									/>
-								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
-								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
-								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
-								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
-								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
-								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
-								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
-								<AudioPlayer name="Bangra" audioSrc="" imgSrc="" />
-							</div> */}
 								<div className={styles.contact}>
 									<div className={styles.infoText}>
 										<p className={styles.name}>Pedro Passarini</p>
@@ -55,7 +39,7 @@ export default function Repertory() {
 									</div>
 									<div>
 										<SocialIcon
-											url="https://api.whatsapp.com/send?phone=5511958449446&text=Olá!%20Vim%20pelo%20site!"
+											url="https://api.whatsapp.com/send?phone=5511999106883&text=Olá!%20Vim%20pelo%20site!"
 											label="WhatsApp"
 											className={styles.socialIcon}
 											fgColor="#FFF5DA"
@@ -63,7 +47,7 @@ export default function Repertory() {
 											style={{ height: 40, width: 40, marginRight: 10 }}
 										/>
 										<SocialIcon
-											url="mailto:lucascipolla@gmail.com"
+											url="mailto:rateria@gmail.com"
 											label="WhatsApp"
 											className={styles.socialIcon}
 											fgColor="#FFF5DA"

@@ -60,16 +60,15 @@ export default function Apresentations(this: any) {
 							<div className={styles.text}>
 								<h1 className={styles.title}>Apresentações</h1>
 								<p>
-									&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Pellentesque luctus tincidunt tincidunt. Duis rhoncus nulla
-									dapibus, scelerisque metus eget, fermentum sem. In hac
-									habitasse platea dictumst. Lorem ipsum dolor sit amet,
-									consectetur adipiscing elit. Sed porttitor semper velit quis
-									euismod. Vivamus placerat, nibh sit amet volutpat pulvinar,
-									nunc arcu tempor sem, ut imperdiet urna ipsum ultricies
-									mauris. Nulla pretium mattis lorem quis dapibus. Morbi tortor
-									lacus, eleifend sed condimentum quis, commodo in nibh. Nulla
-									imperdiet fringilla mollis.
+									&emsp;O momento de apresentação é o que dá sentido a grande
+									parte do esforço e trabalho de uma bateria: ele justifica as
+									horas de ensaio e consolida os momentos de reflexão e
+									criatividade. Particularmente, a Rateria tem muito orgulho da
+									gande diversidade de apresentações de que já participou! Elas
+									vão desde competições e eventos universitários até ações
+									beneficentes, casamentos e comemorações corporativas. Siga
+									pelas opções abaixo para descobrir um pouco do que nós já
+									fizemos.
 									<br />
 								</p>
 
@@ -178,74 +177,69 @@ export default function Apresentations(this: any) {
 							selectedItem={currentSlide}
 						>
 							<p>
-								1111111111 Lorem ipsum dolor sit amet, consectetur adipiscing
-								elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-								aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-								ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-								aute irure dolor in reprehenderit in voluptate velit esse cillum
-								dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-								cupidatat non proident, sunt in culpa qui officia deserunt
-								mollit anim id est laborum.
+								Sem negar suas raízes, a Rateria é presença garantida em eventos
+								esportivos universitários. Assim como em nossa primeira
+								apresentação, seguimos infiltrados em meio a torcida da Escola
+								Politécnica da USP passando energia para os times, zunindo no
+								ouvido dos adversários e celebrando cada vitória! A Rateria já
+								esteve presente em eventos como o Enganharíadas e o InterFono e
+								participa tradicionalmente da famosa InterUSP.
 							</p>
 							<p>
-								22222222222222222 Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-								exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate
-								velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-								sint occaecat cupidatat non proident, sunt in culpa qui officia
-								deserunt mollit anim id est laborum.
+								Além de suas conhecidas apresentações em competições, festas e
+								carnavais, a Rateria também está presente em eventos e ações
+								sociais, apresentações e workshops para ONGs e escolas. Muitas
+								dessas ações são realizadas em parceria com a Poli Social (grupo
+								de extensão social da Poli), ou, ainda, a convite de
+								organizações de fora da universidade com as quais temos
+								parceria.
 							</p>
 							<p>
-								333333333333 Lorem ipsum dolor sit amet, consectetur adipiscing
-								elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-								aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-								ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-								aute irure dolor in reprehenderit in voluptate velit esse cillum
-								dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-								cupidatat non proident, sunt in culpa qui officia deserunt
-								mollit anim id est laborum.
+								Já pensou em ter uma bateria de samba animando a festa do seu
+								casamento?! Sim? Por que não?? Atualmente, a Rateria já tem
+								longo histórico em apresentações profissionais em festas de
+								casamento. Tocamos desde o tradicional samba até músicas de
+								estilos variados, selecionadas e adaptadas para estes momentos
+								especiais. Aproveite e veja na seção de repertório um pouco do
+								nosso cardápio de músicas para apresentações com palco.
 							</p>
 							<p>
-								4444444444444444444 Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-								exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate
-								velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-								sint occaecat cupidatat non proident, sunt in culpa qui officia
-								deserunt mollit anim id est laborum.
+								Em seus mais de 20 anos de trajetória, a Rateria se fez muito
+								conhecida em diversas competições de Baterias Universitárias.
+								Participamos da fundação, em 2009, de um dos principais torneios
+								do Brasil: o Balatucada, do qual participamos desde então, na
+								divisão Principal. Em 2015, ingressamos também no Interbatuc,
+								torneio organizado pela Liga Nacional de Baterias Universitárias
+								que reúne grupos de diferentes instituições do estado de São
+								Paulo e do Brasil.
 							</p>
 							<p>
-								55555555555555555555 Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-								exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate
-								velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-								sint occaecat cupidatat non proident, sunt in culpa qui officia
-								deserunt mollit anim id est laborum.
+								A Rateria também se apresenta em eventos particulares e
+								corporativos. Nos enche de alegria poder levar um pouco de
+								cultura e música brasileiras para as mais diversas ocasiões! Das
+								muitas apresentações memoráveis para as quais fomos chamados,
+								podemos destacar nossa participação na inauguração do Terminal 3
+								do aeroporto de Guarulhos, quando coube a nós a criação de um
+								arranjo musical e gravação de um jingle. Também tocamos em uma
+								festa no Clube Sírio de São Paulo, em 2016, em comemoração ao
+								feriado indiano Diwali. Na ocasião, criamos arranjos de bateria
+								para acompanhar músicas do ritmo típico chamado Bhangra. Se
+								interessou? Confira um pouco do nosso trabalho na seção
+								Repertório.
 							</p>
 							<p>
-								66666666666666666 Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-								exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate
-								velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-								sint occaecat cupidatat non proident, sunt in culpa qui officia
-								deserunt mollit anim id est laborum.
+								Também tocamos em comemorações promovidas por escolas e
+								instituições de ensino. Além de festas juninas em escolas e
+								workshop com alunos de educação infantil, a Rateria se apresenta
+								tradicionalmente em festas de formatura e nas comemorações dos
+								aprovados nos vestibulares.
 							</p>
 							<p>
-								7777777777777777777777 Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-								exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate
-								velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-								sint occaecat cupidatat non proident, sunt in culpa qui officia
-								deserunt mollit anim id est laborum.
+								Onde mais podemos tocar? Somos um grupo que tem paixão pelo som
+								que faz! Nossa bateria ganha mais sentido quanto maior é a
+								diversidade de lugares, momentos e situações que em que surgem
+								oportunidades de novas apresentações. Afinal, o que nos dá
+								alegria, é a batucada da Rateria!
 							</p>
 						</Carousel>
 					</section>

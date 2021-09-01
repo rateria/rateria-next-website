@@ -1,7 +1,6 @@
 import Layout from '../components/Layout';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { SocialIcon } from 'react-social-icons';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
@@ -53,10 +52,10 @@ export default function Home(this: any) {
 							<div className={styles.legendCarousel}>
 								<h1>Quem somos?</h1>
 								<p>
-									A Rateria, bateria da Escola Politécnica da USP, desde 1997 se
-									destaca no cenário de samba universitário da capital paulista.
-									Nosso principal intuito é garantir a diversão e levar alegria
-									a quem nos vê e ouve tocar!
+									A Rateria é a bateria da Escola Politécnica da Universidade de
+									São Paulo! Nosso principal intuito é garantir a diversão tanto
+									de quem toca quanto de quem nos ouve. Conhece um pouco mais
+									sobre a nossa história!
 								</p>
 								<Link href="/sobre">
 									<a className={styles.legendButton}>Saiba Mais!</a>
@@ -68,12 +67,8 @@ export default function Home(this: any) {
 							<div className={styles.legendCarousel}>
 								<h1>Onde Tocamos?</h1>
 								<p>
-									 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Pellentesque luctus tincidunt tincidunt. Duis rhoncus nulla
-									dapibus, scelerisque metus eget, fermentum sem. In hac
-									habitasse platea dictumst. Lorem ipsum dolor sit amet,
-									consectetur adipiscing elit. Sed porttitor semper velit quis
-									euismod.
+									Já participamos dos mais diversos eventos e competições,
+									conheça e veja um pouco das nossas apresentações!
 								</p>
 								<Link href="/apresentacoes">
 									<a className={styles.legendButton}>Saiba Mais!</a>
@@ -85,12 +80,9 @@ export default function Home(this: any) {
 							<div className={styles.legendCarousel}>
 								<h1>O que tocamos?</h1>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-									porttitor semper velit quis euismod. Vivamus placerat, nibh
-									sit amet volutpat pulvinar, nunc arcu tempor sem, ut imperdiet
-									urna ipsum ultricies mauris. Nulla pretium mattis lorem quis
-									dapibus. Morbi tortor lacus, eleifend sed condimentum quis,
-									commodo in nibh. Nulla imperdiet fringilla mollis.
+									Já tocamos diversos estilos ao longo dos anos de história, do
+									samba ao rock, do funk ao sertanejo! Confira o nosso
+									repertório atual!
 								</p>
 								<Link href="/repertorio">
 									<a className={styles.legendButton}>Saiba Mais!</a>
@@ -102,15 +94,11 @@ export default function Home(this: any) {
 							<div className={styles.legendCarousel}>
 								<h1>Fale conosco!</h1>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-									porttitor semper velit quis euismod. Vivamus placerat, nibh
-									sit amet volutpat pulvinar, nunc arcu tempor sem, ut imperdiet
-									urna ipsum ultricies mauris. Nulla pretium mattis lorem quis
-									dapibus. Morbi tortor lacus, eleifend sed condimentum quis,
-									commodo in nibh. Nulla imperdiet fringilla mollis.
+									Se interessou e quer nos conhecer melhor ou contar com a nossa
+									presença em algum dos seus eventos? Converse conosco!
 								</p>
 								<Link href="/contatos">
-									<a className={styles.legendButton}>Saiba Mais!</a>
+									<a className={styles.legendButton}>Fale conosco!</a>
 								</Link>
 							</div>
 						</div>

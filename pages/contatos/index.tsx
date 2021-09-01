@@ -29,7 +29,7 @@ export default function Contacts() {
 									</div>
 									<div>
 										<SocialIcon
-											url="https://api.whatsapp.com/send?phone=5511958449446&text=Olá!%20Vim%20pelo%20site!"
+											url="https://api.whatsapp.com/send?phone=5511940046444&text=Olá!%20Vim%20pelo%20site!"
 											label="WhatsApp"
 											className={styles.socialIcon}
 											fgColor="#FFF5DA"
@@ -37,7 +37,7 @@ export default function Contacts() {
 											style={{ height: 40, width: 40, marginRight: 10 }}
 										/>
 										<SocialIcon
-											url="mailto:lucascipolla@gmail.com"
+											url="mailto:rateria@gmail.com"
 											label="WhatsApp"
 											className={styles.socialIcon}
 											fgColor="#FFF5DA"
@@ -53,7 +53,7 @@ export default function Contacts() {
 									</div>
 									<div>
 										<SocialIcon
-											url="https://api.whatsapp.com/send?phone=5511958449446&text=Olá!%20Vim%20pelo%20site!"
+											url="https://api.whatsapp.com/send?phone=5511995931099&text=Olá!%20Vim%20pelo%20site!"
 											label="WhatsApp"
 											className={styles.socialIcon}
 											fgColor="#FFF5DA"
@@ -61,7 +61,7 @@ export default function Contacts() {
 											style={{ height: 40, width: 40, marginRight: 10 }}
 										/>
 										<SocialIcon
-											url="mailto:lucascipolla@gmail.com"
+											url="mailto:rateria@gmail.com"
 											label="WhatsApp"
 											className={styles.socialIcon}
 											fgColor="#FFF5DA"
@@ -77,7 +77,7 @@ export default function Contacts() {
 									</div>
 									<div>
 										<SocialIcon
-											url="https://api.whatsapp.com/send?phone=5511958449446&text=Olá!%20Vim%20pelo%20site!"
+											url="https://api.whatsapp.com/send?phone=5511999106883&text=Olá!%20Vim%20pelo%20site!"
 											label="WhatsApp"
 											className={styles.socialIcon}
 											fgColor="#FFF5DA"
@@ -85,7 +85,7 @@ export default function Contacts() {
 											style={{ height: 40, width: 40, marginRight: 10 }}
 										/>
 										<SocialIcon
-											url="mailto:lucascipolla@gmail.com"
+											url="mailto:rateria@gmail.com"
 											label="WhatsApp"
 											className={styles.socialIcon}
 											fgColor="#FFF5DA"

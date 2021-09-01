@@ -43,7 +43,7 @@
 .image2,
 .image3,
 .image4 {
-	height: calc(100vh - 120px);
+	height: calc(100vh - 120px - 80px);
 	width: 100vw;
 	background-position: center;
 	background-size: cover;
@@ -60,6 +60,7 @@
 
 .legendCarousel h1 {
 	font-size: 6.4rem;
+	margin-bottom: 2.4rem;
 }
 
 .legendCarousel > p {
@@ -69,7 +70,6 @@
 	text-decoration: underline;
 	font-size: 2.4rem;
 	line-height: 150%;
-	/* font-family: 'Carrois Gothic', sans-serif; */
 
 	color: var(--color-secondary);
 	transition: 0.3s;
@@ -87,8 +87,9 @@
 @media (max-width: 768px) {
 	.image1,
 	.image2,
-	.image3 {
-		height: calc(100vh - 80px);
+	.image3,
+	.image4 {
+		height: calc(100vh - 80px - 140px);
 		width: 100vw;
 	}
 }
