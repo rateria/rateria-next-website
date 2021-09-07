@@ -1,34 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+<h1 align="center" >
+    <img alt="Piupiuwer" width="200" title="#Piupiuwer" src="./public/logo-fundo-azul.svg" />
+</h1>
 
-First, run the development server:
+<h3 align="center">
+    Página da <a href="https://web.facebook.com/rateria?_rdc=1&_rdr">Rateria - Poli USP</a>
+</h3>
+
+<p align="center">
+ <a href="#sobre">Sobre</a> •
+ <a href="#deploy">Como rodar</a> •
+ <a href="#edição">Como editar</a>
+</p>
+
+
+## Sobre
+
+Aplicação web feita em NextJS por ritmistas da Rateria, bateria da Escola Politécnica da USP.
+
+
+## Deploy
+
+Para visualizar a aplicação em sua máquina, basta executar, com o yarn instalado em sua máquina:
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+E abrir o [http://localhost:3000](http://localhost:3000) em seu navegador.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+A versão final HTML estática foi gerada usando o seguinte comando:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.tsx`.
+```bash
+yarn build
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+E está hospedada no serviço Hostinger e pode ser visualizada na pasta './out' do repositório.
 
-## Learn More
+## Edição
 
-To learn more about Next.js, take a look at the following resources:
+De forma a facilitar edições futuras, serão gravados vídeos para a passagem de conhecimento e serão linkados aqui no repositório.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Também há a ideia de tornar o conteúdo do site dinâmico para que seja possível editar o site por meio de uma pasta do Drive.
