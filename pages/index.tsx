@@ -54,7 +54,7 @@ export default function Home(this: any) {
 								<p>
 									A Rateria é a bateria da Escola Politécnica da Universidade de
 									São Paulo! Nosso principal intuito é garantir a diversão tanto
-									de quem toca quanto de quem nos ouve. Conhece um pouco mais
+									de quem toca quanto de quem nos ouve. Conheça um pouco mais
 									sobre a nossa história!
 								</p>
 								<Link href="/sobre">

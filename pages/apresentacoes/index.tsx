@@ -141,31 +141,31 @@ export default function Apresentations(this: any) {
 							>
 								<YoutubeSlide
 									key="youtube-1"
-									url="https://www.youtube.com/embed/KoWoewVNdQU"
+									url="https://www.youtube.com/embed/NhRIi-TPam4"
 								/>
 								<YoutubeSlide
 									key="youtube-2"
-									url="https://www.youtube.com/embed/DSheOc2FYBQ"
+									url="https://www.youtube.com/embed/W8BXGm-CRWY"
 								/>
 								<YoutubeSlide
 									key="youtube-3"
-									url="https://www.youtube.com/embed/-nUr0XaLVAM"
+									url="https://www.youtube.com/embed/oiQFY5GRuwM"
 								/>
 								<YoutubeSlide
 									key="youtube-4"
-									url="https://www.youtube.com/embed/-nUr0XaLVAM"
+									url="https://www.youtube.com/embed/uYrDt1wSG2w"
 								/>
 								<YoutubeSlide
 									key="youtube-5"
-									url="https://www.youtube.com/embed/-nUr0XaLVAM"
+									url="https://www.youtube.com/embed/Yyux9GxV6HA"
 								/>
 								<YoutubeSlide
 									key="youtube-6"
-									url="https://www.youtube.com/embed/-nUr0XaLVAM"
+									url="https://www.youtube.com/embed/wAP_qso5VnI"
 								/>
 								<YoutubeSlide
 									key="youtube-7"
-									url="https://www.youtube.com/embed/-nUr0XaLVAM"
+									url="https://www.youtube.com/embed/48X4SH88ang"
 								/>
 							</CustomCarousel>
 						</div>

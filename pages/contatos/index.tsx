@@ -37,7 +37,7 @@ export default function Contacts() {
 											style={{ height: 40, width: 40, marginRight: 10 }}
 										/>
 										<SocialIcon
-											url="mailto:rateria@gmail.com"
+											url="mailto:lucascc2000@usp.br"
 											label="WhatsApp"
 											className={styles.socialIcon}
 											fgColor="#FFF5DA"
@@ -61,7 +61,7 @@ export default function Contacts() {
 											style={{ height: 40, width: 40, marginRight: 10 }}
 										/>
 										<SocialIcon
-											url="mailto:rateria@gmail.com"
+											url="mailto:julia.takano@usp.br"
 											label="WhatsApp"
 											className={styles.socialIcon}
 											fgColor="#FFF5DA"
@@ -85,7 +85,7 @@ export default function Contacts() {
 											style={{ height: 40, width: 40, marginRight: 10 }}
 										/>
 										<SocialIcon
-											url="mailto:rateria@gmail.com"
+											url="mailto:pedrohpassarini@gmail.com"
 											label="WhatsApp"
 											className={styles.socialIcon}
 											fgColor="#FFF5DA"
