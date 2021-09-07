@@ -1,6 +1,6 @@
 
 <h1 align="center" >
-    <img alt="Piupiuwer" width="200" title="#Piupiuwer" src="./public/logo-fundo-azul.svg" />
+    <img alt="Rateria" width="200" title="#Piupiuwer" src="./public/images/logo-fundo-azul.svg" />
 </h1>
 
 <h3 align="center">
