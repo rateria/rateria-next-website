@@ -7,8 +7,8 @@ export default function About() {
 		<>
 			<Head>
 				<title>Rateria Poli-USP</title>
-				<meta name="description" content="Site da Rateria!" />
-				<link rel="icon" href="/logo-fundo-azul.svg" />
+				<meta name="description" content="A bateria da Escola Politécnica" />
+				<link rel="icon" href="/images/logo-fundo-azul.svg" />
 			</Head>
 
 			<Layout currentPage="About">

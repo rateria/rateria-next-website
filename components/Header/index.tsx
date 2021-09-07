@@ -63,7 +63,7 @@ function Header({ currentPage }: HeaderProps) {
 										layout="fixed"
 									/> */}
 									<img
-										src="/logo-fundo-azul.svg"
+										src="/images/logo-fundo-azul.svg"
 										alt="Rateria"
 										className={isShrunk ? styles.collapsed : styles.image}
 									/>
@@ -120,7 +120,7 @@ function Header({ currentPage }: HeaderProps) {
 							layout="fixed"
 						/> */}
 						<img
-							src="/logo-fundo-azul.svg"
+							src="/images/logo-fundo-azul.svg"
 							alt="Rateria"
 							style={{ width: 60, height: 60 }}
 						/>
