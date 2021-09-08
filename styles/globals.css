@@ -30,6 +30,12 @@ body {
 	scroll-behavior: smooth;
 }
 
+html,
+body,
+head {
+	display: block !important;
+}
+
 :target {
 	display: block;
 	position: relative;
