@@ -53,11 +53,11 @@ export default function About() {
 							</p>
 
 							<p>
-								Nesse ano, o Grêmio começou a querer montar uma bateria e
-								comprou três surdos, três ripas e quatro caixas. Foi organizada
-								uma cervejada para arrecadar dinheiro para peles reservas onde a
-								Bateria da Poli se apresentou com apenas seis componentes, e
-								então foi feita uma votação para decidir o nome.
+								Nesse ano, o Grêmio Politécnico começou a querer montar uma
+								bateria e comprou três surdos, três ripas e quatro caixas. Foi
+								organizada uma cervejada para arrecadar dinheiro para peles
+								reservas onde a Bateria da Poli se apresentou com apenas seis
+								componentes, e então foi feita uma votação para decidir o nome.
 							</p>
 							<p>
 								A partir daí a bateria só cresceu. A presença da Rateria foi se
