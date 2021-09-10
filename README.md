@@ -4,7 +4,7 @@
 </h1>
 
 <h3 align="center">
-    Página da <a href="https://web.facebook.com/rateria?_rdc=1&_rdr">Rateria - Poli USP</a>
+    <a href="https://www.rateria.com.br">Página da Rateria - Poli USP</a>
 </h3>
 
 <p align="center">
@@ -24,6 +24,7 @@ Aplicação web feita em NextJS por ritmistas da Rateria, bateria da Escola Poli
 Para visualizar a aplicação em sua máquina, basta executar, com o yarn instalado em sua máquina:
 
 ```bash
+yarn insatall
 yarn dev
 ```
 
