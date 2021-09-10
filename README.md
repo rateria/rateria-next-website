@@ -4,7 +4,7 @@
 </h1>
 
 <h3 align="center">
-    <a href="www.rateria.com.br">Página da Rateria - Poli USP</a>
+    <a href="https://www.rateria.com.br">Página da Rateria - Poli USP</a>
 </h3>
 
 <p align="center">
