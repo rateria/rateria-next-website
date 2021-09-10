@@ -4,40 +4,35 @@ import styles from './Post.module.css';
 import HeaderNewsbek from '../../components/HeaderNewsbek';
 import Link from 'next/link';
 
-// export async function getServerSideProps({ query }: any) {
-// 	const { id } = query;
-// 	console.log(id);
+export async function getServerSideProps() {
+	const auth = await google.auth.getClient({
+		scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
+	});
 
-// 	const auth = await google.auth.getClient({
-// 		scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
-// 	});
+	const sheets = google.sheets({ version: 'v4', auth });
 
-// 	const sheets = google.sheets({ version: 'v4', auth });
+	const range = `NewsBek`;
 
-// 	const range = `NewsBek!A${parseInt(id) + 1}:C${parseInt(id) + 1}`;
+	const response = await sheets.spreadsheets.values.get({
+		spreadsheetId: process.env.SHEET_ID,
+		range,
+	});
 
-// 	const response = await sheets.spreadsheets.values.get({
-// 		spreadsheetId: process.env.SHEET_ID,
-// 		range,
-// 	});
+	// // @ts-ignore
+	const rows = response.data.values;
+	rows?.shift();
+	// console.log('title: ' + title);
+	// console.log('content: ' + content);
+	// console.log('date: ' + date);
 
-// 	// @ts-ignore
-// 	const [title, content, date] = response.data.values[0];
+	return {
+		props: {
+			rows,
+		},
+	};
+}
 
-// 	console.log('title: ' + title);
-// 	console.log('content: ' + content);
-// 	console.log('date: ' + date);
-
-// 	return {
-// 		props: {
-// 			title,
-// 			content,
-// 			date,
-// 		},
-// 	};
-// }
-
-export default function Newsbek() {
+export default function Newsbek({ rows }: any) {
 	return (
 		<>
 			<Head>
@@ -64,19 +59,17 @@ export default function Newsbek() {
 			<HeaderNewsbek date={'1 de abril de 2021'}></HeaderNewsbek>
 			<main className={styles.mainContent}>
 				<article>
-					<div className={styles.card}>
-						<Link href="/newsbek/1">
-							<a>A Teia</a>
-						</Link>
-						<h3>01/05/2021</h3>
-					</div>
-
-					<div className={styles.card}>
-						<Link href="/newsbek/2">
-							<a>Relatos Interbatuc 19</a>
-						</Link>
-						<h3>01/05/2021</h3>
-					</div>
+					{rows.map((row: any) => {
+						const adress = '/newsbek/' + (rows.indexOf(row) + 1);
+						return (
+							<div className={styles.card}>
+								<Link href={adress}>
+									<a>{row[0]}</a>
+								</Link>
+								<h3>{row[2]}</h3>
+							</div>
+						);
+					})}
 				</article>
 			</main>
 		</>
