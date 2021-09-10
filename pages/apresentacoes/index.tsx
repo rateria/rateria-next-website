@@ -21,7 +21,6 @@ const YoutubeSlide = ({
 		<ReactPlayer
 			width="100%"
 			url={url}
-			playing={isSelected}
 			height="100%"
 			controls={true}
 			style={{ position: 'absolute' }}
