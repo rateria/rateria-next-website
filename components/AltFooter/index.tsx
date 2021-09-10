@@ -39,15 +39,6 @@ function NewFooter() {
 					fgColor="#FFF5DA"
 					target="_blank"
 				/>
-				<SocialIcon
-					url="https://linktr.ee/rateria"
-					defaultSVG={linktreeIcon}
-					label="Outros links importantes!"
-					fgColor="#FFF5DA"
-					bgColor="#28BF7B"
-					className={styles.socialIcon}
-					target="_blank"
-				/>
 			</div>
 			<div className={styles.credits}>
 				<p>Página feita com 💛 por amigos ratinhos.</p>

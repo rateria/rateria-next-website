@@ -19,6 +19,7 @@
 
 .credits p {
 	font-size: 1.4em;
+	text-indent: 0;
 	color: var(--color-bg-light);
 }
 
