@@ -74,6 +74,15 @@ function HeaderNewsbek({ date }: HeaderNewsbekProps) {
 							NEWSBEK
 						</a>
 					</Link>
+
+					{/* <nav style={{ height: isShrunk ? 80 : 120 }}>
+						<Link href="/newsbek">
+							<a style={{ fontSize: isShrunk ? 44 : 64 }}>NEWSBEK</a>
+						</Link>
+					</nav>
+					<div className={styles.info}>
+						<p>Oioioi</p>
+					</div> */}
 				</div>
 				<div className={styles.mobileContent}>
 					<Link href="/newsbek">
