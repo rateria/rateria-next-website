@@ -20,7 +20,7 @@ export default function Home(this: any) {
 					<Carousel
 						emulateTouch
 						infiniteLoop
-						interval={4000}
+						interval={10000}
 						autoPlay
 						renderArrowPrev={(onClickHandler, hasPrev, label) =>
 							hasPrev && (
