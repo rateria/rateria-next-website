@@ -10,6 +10,7 @@ export default function CustomCarousel(props: any) {
 
 	const handleSlideChange = (index: number) => {
 		props.curSlideChange(index);
+		props.setFirstAccess(false);
 	};
 
 	return (

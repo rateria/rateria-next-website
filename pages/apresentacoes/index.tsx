@@ -13,15 +13,18 @@ import { useState } from 'react';
 const YoutubeSlide = ({
 	url,
 	isSelected,
+	firstAccess,
 }: {
 	url: string;
 	isSelected?: boolean;
+	firstAccess?: boolean;
 }) => (
 	<div className={styles.videoContainer}>
 		<ReactPlayer
 			width="100%"
 			url={url}
 			height="100%"
+			playing={isSelected && !firstAccess}
 			controls={true}
 			style={{ position: 'absolute' }}
 		/>
@@ -30,10 +33,12 @@ const YoutubeSlide = ({
 
 export default function Apresentations(this: any) {
 	const [currentSlide, setCurrentSlide] = useState(3);
+	const [firstAccess, setFirstAccess] = useState(true);
 
 	const updateCurrentSlide = (index: number) => {
 		if (currentSlide !== index) {
 			setCurrentSlide(index);
+			setFirstAccess(false);
 		}
 	};
 
@@ -135,6 +140,7 @@ export default function Apresentations(this: any) {
 								curSlide={currentSlide}
 								curSlideChange={setCurrentSlide}
 								currentSlide={currentSlide}
+								setFirstAccess={setFirstAccess}
 							>
 								<YoutubeSlide
 									key="youtube-1"
