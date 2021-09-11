@@ -48,23 +48,14 @@
 	overflow: hidden;
 	width: 45%;
 	height: 50rem;
-	/* max-width: 450px; */
+	max-width: 450px;
 	z-index: 0;
+	width: 100%;
 
-	background: url('../../public/images/interbatuc2.png');
-	background-position: center;
-	background-size: cover;
-
+	object-fit: cover;
 	position: relative;
+	padding-right: 5rem;
 	top: -1.5rem;
-}
-
-.image2 {
-	width: 400px;
-	height: 400px;
-	background: url('../../public/images/interbatuc2.png');
-	background-position: center;
-	background-size: cover;
 }
 
 .text {

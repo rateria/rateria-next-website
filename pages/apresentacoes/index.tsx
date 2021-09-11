@@ -10,6 +10,8 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import ReactPlayer from 'react-player';
 import { useState } from 'react';
 
+import image from '../../public/images/interbatuc2.png';
+
 const YoutubeSlide = ({
 	url,
 	isSelected,
@@ -58,7 +60,11 @@ export default function Apresentations(this: any) {
 
 					<div className={styles.wrapper}>
 						<div className={styles.container}>
-							<div className={styles.image}></div>
+							<img
+								alt="Foto da Imbonha no Interbatuc 2019"
+								src={image}
+								className={styles.image}
+							/>
 							<div className={styles.text}>
 								<h1 className={styles.title}>Apresentações</h1>
 								<p>

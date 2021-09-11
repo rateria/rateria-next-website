@@ -98,7 +98,7 @@
 	transform: scale(1.1);
 }
 
-.imageC {
+.image {
 	overflow: hidden;
 	width: 50vw;
 	height: 60vh;
@@ -108,13 +108,17 @@
 
 	z-index: 3;
 
-	background: url('../../public/images/interbatuc1.png');
+	/* background: url('../../public/images/interbatuc1.png');
 	background-position: center;
-	background-size: cover;
+	background-size: cover; */
+
+	/* width: 100%; */
+	/* height: 100%; */
+	object-fit: cover;
 }
 
 @media (max-width: 768px) {
-	.imageC {
+	.image {
 		display: none;
 	}
 

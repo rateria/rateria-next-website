@@ -26,29 +26,6 @@
 	left: 10px;
 }
 
-.image1 {
-	background: url('/images/carouselImg1.jpg');
-}
-.image2 {
-	background: url('/images/carouselImg2.jpg');
-}
-.image3 {
-	background: url('/images/carouselImg3.jpg');
-}
-.image4 {
-	background: url('/images/carouselImg4.png');
-}
-
-.image1,
-.image2,
-.image3,
-.image4 {
-	height: calc(100vh - 120px - 80px);
-	width: 100vw;
-	background-position: center;
-	background-size: cover;
-}
-
 .legendCarousel {
 	color: var(--color-white);
 	z-index: 1;
@@ -56,6 +33,12 @@
 	width: 60vw;
 	margin: 10vw;
 	max-width: 500px;
+}
+
+.carouselImage {
+	height: 100%;
+	width: 100vw !important;
+	object-fit: cover;
 }
 
 .legendCarousel h1 {
@@ -82,13 +65,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	height: calc(100vh - 120px - 80px);
 }
 
 @media (max-width: 768px) {
-	.image1,
-	.image2,
-	.image3,
-	.image4 {
+	.carouselItem {
 		height: calc(100vh - 80px - 140px);
 		width: 100vw;
 	}

@@ -6,6 +6,11 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import Link from 'next/link';
 
+import image1 from './../public/images/carouselImg1.jpg';
+import image2 from './../public/images/carouselImg2.jpg';
+import image3 from './../public/images/carouselImg3.jpg';
+import image4 from './../public/images/carouselImg4.png';
+
 export default function Home(this: any) {
 	return (
 		<>
@@ -49,7 +54,12 @@ export default function Home(this: any) {
 						showThumbs={false}
 					>
 						<div className={styles.carouselItem}>
-							<div className={styles.image1}></div>
+							{/* <div className={styles.image1}></div> */}
+							<img
+								alt="Foto da comemoração pós-apresentação do Interbatuc 2019"
+								className={styles.carouselImage}
+								src={image1}
+							/>
 							<div className={styles.legendCarousel}>
 								<h1>Quem somos?</h1>
 								<p>
@@ -64,7 +74,20 @@ export default function Home(this: any) {
 							</div>
 						</div>
 						<div className={styles.carouselItem}>
-							<div className={styles.image2}></div>
+							{/* <Image
+								alt="oioioi"
+								src={image2}
+								layout="fill"
+								objectFit="cover"
+								quality={100}
+								priority={true}
+							/> */}
+							<img
+								alt="Timão mestrando bateria no Bixopp 2019"
+								className={styles.carouselImage}
+								src={image2}
+							/>
+
 							<div className={styles.legendCarousel}>
 								<h1>Onde Tocamos?</h1>
 								<p>
@@ -77,7 +100,20 @@ export default function Home(this: any) {
 							</div>
 						</div>
 						<div className={styles.carouselItem}>
-							<div className={styles.image3}></div>
+							{/* <Image
+								alt="oioioi"
+								src={image3}
+								layout="fill"
+								objectFit="cover"
+								quality={100}
+								priority={true}
+							/> */}
+							<img
+								alt="Palco da Rateria no Bixopp 2019"
+								className={styles.carouselImage}
+								src={image3}
+							/>
+
 							<div className={styles.legendCarousel}>
 								<h1>O que tocamos?</h1>
 								<p>
@@ -91,7 +127,21 @@ export default function Home(this: any) {
 							</div>
 						</div>
 						<div className={styles.carouselItem}>
-							<div className={styles.image4}></div>
+							<img
+								alt="Foto da Rateria no palco do Interbatuc 2019"
+								className={styles.carouselImage}
+								src={image4}
+							/>
+
+							{/* <Image
+
+								alt="oioioi"
+								src={image4}
+								layout="fill"
+								objectFit="cover"
+								quality={100}
+								priority={true}
+							/> */}
 							<div className={styles.legendCarousel}>
 								<h1>Fale conosco!</h1>
 								<p>

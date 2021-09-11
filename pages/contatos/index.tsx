@@ -3,6 +3,8 @@ import Head from 'next/head';
 import styles from './Contacts.module.css';
 import { SocialIcon } from 'react-social-icons';
 
+import image from '../../public/images/interbatuc1.png';
+
 export default function Contacts() {
 	return (
 		<>
@@ -95,7 +97,11 @@ export default function Contacts() {
 									</div>
 								</div>
 							</div>
-							<div className={styles.imageC}></div>
+							<img
+								alt="Foto da Imbonha no Interbatuc 2019"
+								src={image}
+								className={styles.image}
+							/>{' '}
 						</div>
 					</div>
 				</div>

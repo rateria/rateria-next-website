@@ -2,6 +2,9 @@ import Layout from '../../components/Layout';
 import Head from 'next/head';
 import styles from './About.module.css';
 
+import image1 from '../../public/images/tornado.jpg';
+import image2 from '../../public/images/interbatuc3.jpg';
+
 export default function About() {
 	return (
 		<>
@@ -18,7 +21,12 @@ export default function About() {
 
 				<div className={styles.wrapper}>
 					<div className={styles.container}>
-						<div className={styles.image1}></div>
+						{/* <div className={styles.image1}></div> */}
+						<img
+							alt="Foto da comemoração pós-premiação da competição Mestre Tornado"
+							src={image1}
+							className={styles.image1}
+						/>
 						<div className={styles.text1}>
 							<h1>Quem somos?</h1>
 							<p>
@@ -41,7 +49,11 @@ export default function About() {
 								praticamente qualquer ritmo à nossa bateria.
 							</p>
 						</div>
-						<div className={styles.image2}></div>
+						<img
+							alt="Foto da comemoração pós-apresentação do Interbatuc 2019"
+							src={image2}
+							className={styles.image2}
+						/>
 						<div className={styles.text2}>
 							<h2>Nossa História</h2>
 							<p>
